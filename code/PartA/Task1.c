@@ -69,6 +69,7 @@ int main(int argc, char **argv)
                         for (int j = (jj - 1) * block; j < (jj * block); j++)
                         {
                             C[i * column3 + j] += A[i * column1 + k] * B[k * column2 + j];
+                            
                         }
                     }
                 }
