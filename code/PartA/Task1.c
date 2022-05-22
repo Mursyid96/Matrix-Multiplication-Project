@@ -79,7 +79,7 @@ int main(int argc, char **argv)
 }
     
 
-    /*for (int i = 0; i < row3; i++)
+   /* for (int i = 0; i < row3; i++)
     {
         for (int k = 0; k < column3; k++)
         {
@@ -88,7 +88,7 @@ int main(int argc, char **argv)
                 C[i * column3 + j] += A[i * column1 + k] * B[k * column2 + j];
             }
         }
-    }*/ 
+    }*/
 
     double end = omp_get_wtime();
 
