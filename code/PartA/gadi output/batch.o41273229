@@ -1,0 +1,1006 @@
+
+------------------------------------------------------------------------
+Job 41273229 has exceeded memory allocation on node gadi-cpu-clx-0325.gadi.nci.org.au
+Process "bash", pid 3609277, rss 3493888, vmem 21667840
+Process "pbs_demux", pid 3609287, rss 966656, vmem 11079680
+Process "41273229.gadi-p", pid 3609336, rss 2994176, vmem 10170368
+Process "mpirun", pid 3609351, rss 8220672, vmem 739442688
+Process "Task2-1", pid 3609364, rss 111337472, vmem 638980096
+Process "Task2-1", pid 3609365, rss 111570944, vmem 638976000
+Process "Task2-1", pid 3609366, rss 90656768, vmem 638976000
+Process "Task2-1", pid 3609367, rss 88305664, vmem 638976000
+Process "Task2-1", pid 3609368, rss 127492096, vmem 646737920
+Process "Task2-1", pid 3609369, rss 127533056, vmem 646737920
+Process "Task2-1", pid 3609370, rss 127356928, vmem 646737920
+Process "Task2-1", pid 3609371, rss 92561408, vmem 638976000
+Process "Task2-1", pid 3609372, rss 127344640, vmem 646737920
+Process "Task2-1", pid 3609373, rss 99053568, vmem 638976000
+Process "Task2-1", pid 3609374, rss 113762304, vmem 638984192
+Process "Task2-1", pid 3609375, rss 103276544, vmem 638971904
+Process "Task2-1", pid 3609376, rss 94593024, vmem 638984192
+Process "Task2-1", pid 3609377, rss 127324160, vmem 646746112
+Process "Task2-1", pid 3609378, rss 127295488, vmem 646742016
+Process "Task2-1", pid 3609379, rss 126922752, vmem 646742016
+Process "Task2-1", pid 3609380, rss 119730176, vmem 638984192
+Process "Task2-1", pid 3609381, rss 98754560, vmem 638980096
+Process "Task2-1", pid 3609382, rss 94654464, vmem 638984192
+Process "Task2-1", pid 3609383, rss 111583232, vmem 638980096
+Process "Task2-1", pid 3609384, rss 127299584, vmem 646742016
+Process "Task2-1", pid 3609385, rss 109715456, vmem 638984192
+Process "Task2-1", pid 3609386, rss 96673792, vmem 638980096
+Process "Task2-1", pid 3609387, rss 127291392, vmem 646742016
+Process "Task2-1", pid 3609388, rss 97214464, vmem 638976000
+Process "Task2-1", pid 3609389, rss 105566208, vmem 638980096
+Process "Task2-1", pid 3609392, rss 105787392, vmem 638976000
+Process "Task2-1", pid 3609393, rss 86503424, vmem 638980096
+Process "Task2-1", pid 3609394, rss 127377408, vmem 646737920
+Process "Task2-1", pid 3609397, rss 93028352, vmem 638976000
+Process "Task2-1", pid 3609398, rss 88334336, vmem 638984192
+Process "Task2-1", pid 3609399, rss 125837312, vmem 646746112
+Process "Task2-1", pid 3609409, rss 127410176, vmem 646737920
+Process "Task2-1", pid 3609414, rss 127381504, vmem 646737920
+Process "Task2-1", pid 3609415, rss 99049472, vmem 638980096
+Process "Task2-1", pid 3609420, rss 127275008, vmem 646737920
+Process "Task2-1", pid 3609431, rss 127328256, vmem 646737920
+Process "Task2-1", pid 3609434, rss 102973440, vmem 638976000
+Process "Task2-1", pid 3609437, rss 84099072, vmem 638980096
+Process "Task2-1", pid 3609440, rss 127279104, vmem 646742016
+Process "Task2-1", pid 3609446, rss 117747712, vmem 638976000
+Process "Task2-1", pid 3609447, rss 86224896, vmem 638976000
+Process "Task2-1", pid 3609451, rss 118169600, vmem 638984192
+Process "Task2-1", pid 3609454, rss 115851264, vmem 638984192
+Process "Task2-1", pid 3609456, rss 86523904, vmem 638980096
+Process "Task2-1", pid 3609457, rss 119762944, vmem 638988288
+Process "Task2-1", pid 3609461, rss 95371264, vmem 638976000
+Process "Task2-1", pid 3609463, rss 127287296, vmem 646737920
+------------------------------------------------------------------------
+For more information visit https://opus.nci.org.au/x/SwGRAQ
+------------------------------------------------------------------------
+[1653481579.164066] [gadi-cpu-clx-0325:3609365:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x1469aac00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481579.167558] [gadi-cpu-clx-0325:3609365:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481579.164090] [gadi-cpu-clx-0325:3609366:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14fb35000000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481579.167487] [gadi-cpu-clx-0325:3609366:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481579.164076] [gadi-cpu-clx-0325:3609376:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14b4d9c00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481579.167432] [gadi-cpu-clx-0325:3609376:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481579.164109] [gadi-cpu-clx-0325:3609385:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14dff0a00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481579.167550] [gadi-cpu-clx-0325:3609385:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481579.164063] [gadi-cpu-clx-0325:3609392:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14d82f000000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481579.167594] [gadi-cpu-clx-0325:3609392:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481579.164105] [gadi-cpu-clx-0325:3609393:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x153a20e00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481579.167412] [gadi-cpu-clx-0325:3609393:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481579.164075] [gadi-cpu-clx-0325:3609446:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14a5ff200000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481579.167518] [gadi-cpu-clx-0325:3609446:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481579.164077] [gadi-cpu-clx-0325:3609451:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14acdc800000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481579.167600] [gadi-cpu-clx-0325:3609451:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481579.164052] [gadi-cpu-clx-0325:3609457:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x152c71000000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481579.167488] [gadi-cpu-clx-0325:3609457:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481579.164175] [gadi-cpu-clx-0325:3609364:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x153159600000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481579.167874] [gadi-cpu-clx-0325:3609364:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481579.164089] [gadi-cpu-clx-0325:3609367:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x152e8f400000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481579.167395] [gadi-cpu-clx-0325:3609367:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481579.164117] [gadi-cpu-clx-0325:3609371:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14c623e00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481579.167398] [gadi-cpu-clx-0325:3609371:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481579.164100] [gadi-cpu-clx-0325:3609373:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x147d75600000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481579.167527] [gadi-cpu-clx-0325:3609373:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481579.165475] [gadi-cpu-clx-0325:3609374:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14feb7c00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481579.167581] [gadi-cpu-clx-0325:3609374:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481579.164060] [gadi-cpu-clx-0325:3609375:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x146f24800000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481579.167549] [gadi-cpu-clx-0325:3609375:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481579.164063] [gadi-cpu-clx-0325:3609380:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14ffc6200000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481579.167563] [gadi-cpu-clx-0325:3609380:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481579.164116] [gadi-cpu-clx-0325:3609381:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14fe41200000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481579.167472] [gadi-cpu-clx-0325:3609381:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481579.164070] [gadi-cpu-clx-0325:3609382:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x147c17c00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481579.167456] [gadi-cpu-clx-0325:3609382:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481579.164122] [gadi-cpu-clx-0325:3609383:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x152832c00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481579.167582] [gadi-cpu-clx-0325:3609383:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481579.164110] [gadi-cpu-clx-0325:3609386:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x152ea5200000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481579.167407] [gadi-cpu-clx-0325:3609386:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481579.164121] [gadi-cpu-clx-0325:3609388:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14f0dec00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481579.167507] [gadi-cpu-clx-0325:3609388:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481579.164088] [gadi-cpu-clx-0325:3609389:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x145566a00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481579.167399] [gadi-cpu-clx-0325:3609389:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481579.164097] [gadi-cpu-clx-0325:3609397:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14e084800000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481579.167510] [gadi-cpu-clx-0325:3609397:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481579.164111] [gadi-cpu-clx-0325:3609398:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14b6dde00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481579.167413] [gadi-cpu-clx-0325:3609398:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481579.164101] [gadi-cpu-clx-0325:3609415:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x145b5be00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481579.167492] [gadi-cpu-clx-0325:3609415:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481579.164182] [gadi-cpu-clx-0325:3609434:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x1464ffe00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481579.167480] [gadi-cpu-clx-0325:3609434:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481579.164054] [gadi-cpu-clx-0325:3609437:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14e93ec00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481579.167404] [gadi-cpu-clx-0325:3609437:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481579.164084] [gadi-cpu-clx-0325:3609447:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x146255e00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481579.167403] [gadi-cpu-clx-0325:3609447:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481579.164097] [gadi-cpu-clx-0325:3609454:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14e6ce200000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481579.167526] [gadi-cpu-clx-0325:3609454:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481579.164181] [gadi-cpu-clx-0325:3609456:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14588a400000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481579.167447] [gadi-cpu-clx-0325:3609456:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481579.164084] [gadi-cpu-clx-0325:3609461:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14d476600000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481579.167507] [gadi-cpu-clx-0325:3609461:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+Job 41273229 has exceeded memory allocation on node gadi-cpu-clx-0325.gadi.nci.org.au
+Process "bash", pid 3609277, rss 3493888, vmem 21667840
+Process "pbs_demux", pid 3609287, rss 966656, vmem 11079680
+Process "41273229.gadi-p", pid 3609336, rss 2994176, vmem 10170368
+Process "mpirun", pid 3609351, rss 8310784, vmem 739442688
+Process "Task2-1", pid 3609364, rss 104861696, vmem 646742016
+Process "Task2-1", pid 3609365, rss 104312832, vmem 646737920
+Process "Task2-1", pid 3609366, rss 106442752, vmem 646737920
+Process "Task2-1", pid 3609367, rss 106536960, vmem 646737920
+Process "Task2-1", pid 3609368, rss 127664128, vmem 646737920
+Process "Task2-1", pid 3609370, rss 127528960, vmem 646737920
+Process "Task2-1", pid 3609371, rss 108531712, vmem 646737920
+Process "Task2-1", pid 3609372, rss 127528960, vmem 646737920
+Process "Task2-1", pid 3609373, rss 107175936, vmem 646737920
+Process "Task2-1", pid 3609374, rss 108511232, vmem 646746112
+Process "Task2-1", pid 3609375, rss 108523520, vmem 646733824
+Process "Task2-1", pid 3609376, rss 106295296, vmem 646746112
+Process "Task2-1", pid 3609377, rss 127422464, vmem 646746112
+Process "Task2-1", pid 3609378, rss 127193088, vmem 646742016
+Process "Task2-1", pid 3609379, rss 127651840, vmem 646742016
+Process "Task2-1", pid 3609380, rss 104296448, vmem 646746112
+Process "Task2-1", pid 3609381, rss 106405888, vmem 646742016
+Process "Task2-1", pid 3609382, rss 104538112, vmem 646746112
+Process "Task2-1", pid 3609383, rss 104472576, vmem 646742016
+Process "Task2-1", pid 3609384, rss 127459328, vmem 646742016
+Process "Task2-1", pid 3609385, rss 104431616, vmem 646746112
+Process "Task2-1", pid 3609386, rss 108388352, vmem 646742016
+Process "Task2-1", pid 3609387, rss 127483904, vmem 646742016
+Process "Task2-1", pid 3609388, rss 106352640, vmem 646737920
+Process "Task2-1", pid 3609389, rss 104312832, vmem 646742016
+Process "Task2-1", pid 3609392, rss 104181760, vmem 646737920
+Process "Task2-1", pid 3609393, rss 104321024, vmem 646742016
+Process "Task2-1", pid 3609394, rss 127528960, vmem 646737920
+Process "Task2-1", pid 3609397, rss 104472576, vmem 646737920
+Process "Task2-1", pid 3609398, rss 104296448, vmem 646746112
+Process "Task2-1", pid 3609399, rss 127471616, vmem 646746112
+Process "Task2-1", pid 3609409, rss 127574016, vmem 646737920
+Process "Task2-1", pid 3609414, rss 127557632, vmem 646737920
+Process "Task2-1", pid 3609415, rss 104251392, vmem 646742016
+Process "Task2-1", pid 3609420, rss 127635456, vmem 646737920
+Process "Task2-1", pid 3609431, rss 127410176, vmem 646737920
+Process "Task2-1", pid 3609434, rss 104222720, vmem 646737920
+Process "Task2-1", pid 3609437, rss 104300544, vmem 646742016
+Process "Task2-1", pid 3609440, rss 127430656, vmem 646742016
+Process "Task2-1", pid 3609446, rss 104329216, vmem 646737920
+Process "Task2-1", pid 3609447, rss 104333312, vmem 646737920
+Process "Task2-1", pid 3609451, rss 104366080, vmem 646746112
+Process "Task2-1", pid 3609454, rss 102248448, vmem 646746112
+Process "Task2-1", pid 3609456, rss 104292352, vmem 646742016
+Process "Task2-1", pid 3609457, rss 104259584, vmem 646750208
+Process "Task2-1", pid 3609461, rss 104300544, vmem 646737920
+Process "Task2-1", pid 3609463, rss 127438848, vmem 646737920
+------------------------------------------------------------------------
+For more information visit https://opus.nci.org.au/x/SwGRAQ
+------------------------------------------------------------------------
+[1653481579.308447] [gadi-cpu-clx-0325:3609457:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x152c70a00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481579.321143] [gadi-cpu-clx-0325:3609457:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481579.308391] [gadi-cpu-clx-0325:3609365:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x1469aa600000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481579.312234] [gadi-cpu-clx-0325:3609365:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481579.308444] [gadi-cpu-clx-0325:3609364:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x153159000000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481579.312283] [gadi-cpu-clx-0325:3609364:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481579.308441] [gadi-cpu-clx-0325:3609461:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14d476000000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481579.312233] [gadi-cpu-clx-0325:3609461:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481579.308511] [gadi-cpu-clx-0325:3609367:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x152e8ee00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481579.312282] [gadi-cpu-clx-0325:3609367:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481579.308401] [gadi-cpu-clx-0325:3609371:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14c623800000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481579.312250] [gadi-cpu-clx-0325:3609371:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481579.308443] [gadi-cpu-clx-0325:3609373:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x147d75000000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481579.312260] [gadi-cpu-clx-0325:3609373:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481579.308385] [gadi-cpu-clx-0325:3609374:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14feb7600000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481579.312291] [gadi-cpu-clx-0325:3609374:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481579.308451] [gadi-cpu-clx-0325:3609366:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14fb34a00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481579.321152] [gadi-cpu-clx-0325:3609366:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481579.308388] [gadi-cpu-clx-0325:3609375:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x146f24200000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481579.312274] [gadi-cpu-clx-0325:3609375:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481579.308412] [gadi-cpu-clx-0325:3609380:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14ffc5c00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481579.312286] [gadi-cpu-clx-0325:3609380:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481579.308370] [gadi-cpu-clx-0325:3609381:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14fe40c00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481579.312240] [gadi-cpu-clx-0325:3609381:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481579.308422] [gadi-cpu-clx-0325:3609382:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x147c17600000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481579.312243] [gadi-cpu-clx-0325:3609382:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481579.308393] [gadi-cpu-clx-0325:3609376:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14b4d9600000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481579.312239] [gadi-cpu-clx-0325:3609376:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481579.308436] [gadi-cpu-clx-0325:3609383:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x152832600000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481579.312229] [gadi-cpu-clx-0325:3609383:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481579.308437] [gadi-cpu-clx-0325:3609386:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x152ea4c00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481579.312243] [gadi-cpu-clx-0325:3609386:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481579.308524] [gadi-cpu-clx-0325:3609388:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14f0de600000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481579.312275] [gadi-cpu-clx-0325:3609388:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481579.308414] [gadi-cpu-clx-0325:3609385:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14dff0400000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481579.312262] [gadi-cpu-clx-0325:3609385:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481579.308391] [gadi-cpu-clx-0325:3609392:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14d82ea00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481579.312266] [gadi-cpu-clx-0325:3609392:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481579.308433] [gadi-cpu-clx-0325:3609389:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x145566400000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481579.312254] [gadi-cpu-clx-0325:3609389:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481579.308509] [gadi-cpu-clx-0325:3609397:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14e084200000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481579.312285] [gadi-cpu-clx-0325:3609397:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481579.308429] [gadi-cpu-clx-0325:3609398:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14b6dd800000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481579.312222] [gadi-cpu-clx-0325:3609398:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481579.308450] [gadi-cpu-clx-0325:3609415:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x145b5b800000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481579.312238] [gadi-cpu-clx-0325:3609415:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481579.308418] [gadi-cpu-clx-0325:3609434:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x1464ff800000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481579.312268] [gadi-cpu-clx-0325:3609434:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481579.308386] [gadi-cpu-clx-0325:3609393:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x153a20800000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481579.312247] [gadi-cpu-clx-0325:3609393:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481579.308433] [gadi-cpu-clx-0325:3609437:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14e93e600000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481579.312285] [gadi-cpu-clx-0325:3609437:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481579.308398] [gadi-cpu-clx-0325:3609446:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14a5fec00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481579.312267] [gadi-cpu-clx-0325:3609446:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481579.308392] [gadi-cpu-clx-0325:3609447:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x146255800000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481579.312270] [gadi-cpu-clx-0325:3609447:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481579.308375] [gadi-cpu-clx-0325:3609454:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14e6cdc00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481579.312291] [gadi-cpu-clx-0325:3609454:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481579.308388] [gadi-cpu-clx-0325:3609451:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14acdc200000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481579.312219] [gadi-cpu-clx-0325:3609451:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481579.308509] [gadi-cpu-clx-0325:3609456:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x145889e00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481579.312224] [gadi-cpu-clx-0325:3609456:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+--------------------------------------------------------------------------
+mpirun noticed that process rank 4 with PID 0 on node gadi-cpu-clx-0325 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+[1653481587.352037] [gadi-cpu-clx-0325:3610258:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14fb15a00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481587.351972] [gadi-cpu-clx-0325:3610256:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x149035400000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481587.356623] [gadi-cpu-clx-0325:3610256:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481587.352131] [gadi-cpu-clx-0325:3610264:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x148feea00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481587.356688] [gadi-cpu-clx-0325:3610264:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481587.352035] [gadi-cpu-clx-0325:3610285:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14565a600000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481587.356565] [gadi-cpu-clx-0325:3610285:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481587.352019] [gadi-cpu-clx-0325:3610281:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x151e15c00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481587.356661] [gadi-cpu-clx-0325:3610281:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481587.351997] [gadi-cpu-clx-0325:3610316:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14bafc800000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481587.356576] [gadi-cpu-clx-0325:3610316:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481587.351951] [gadi-cpu-clx-0325:3610335:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14c5f0800000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481587.356640] [gadi-cpu-clx-0325:3610335:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481587.352035] [gadi-cpu-clx-0325:3610325:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x1514b8400000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481587.356632] [gadi-cpu-clx-0325:3610325:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481587.352020] [gadi-cpu-clx-0325:3610340:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x1530f2400000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481587.356634] [gadi-cpu-clx-0325:3610340:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481587.352015] [gadi-cpu-clx-0325:3610343:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x149680c00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481587.356573] [gadi-cpu-clx-0325:3610343:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481587.351997] [gadi-cpu-clx-0325:3610362:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x1502dba00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481587.356578] [gadi-cpu-clx-0325:3610362:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481587.352010] [gadi-cpu-clx-0325:3610360:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x1510eb200000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481587.356605] [gadi-cpu-clx-0325:3610360:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481587.351991] [gadi-cpu-clx-0325:3610354:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14fc04c00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481587.356593] [gadi-cpu-clx-0325:3610354:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481587.351968] [gadi-cpu-clx-0325:3610251:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14ac15c00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481587.356588] [gadi-cpu-clx-0325:3610251:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481587.352000] [gadi-cpu-clx-0325:3610254:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x1455dd400000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481587.356657] [gadi-cpu-clx-0325:3610254:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481587.351959] [gadi-cpu-clx-0325:3610253:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14ebc4600000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481587.356671] [gadi-cpu-clx-0325:3610253:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481587.352120] [gadi-cpu-clx-0325:3610252:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x1491cfa00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481587.356559] [gadi-cpu-clx-0325:3610252:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481587.356578] [gadi-cpu-clx-0325:3610258:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481587.351980] [gadi-cpu-clx-0325:3610261:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14a9bee00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481587.356610] [gadi-cpu-clx-0325:3610261:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481587.352033] [gadi-cpu-clx-0325:3610262:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14c282800000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481587.356601] [gadi-cpu-clx-0325:3610262:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481587.352097] [gadi-cpu-clx-0325:3610265:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14f85fc00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481587.356619] [gadi-cpu-clx-0325:3610265:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481587.351968] [gadi-cpu-clx-0325:3610266:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14bb40c00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481587.356678] [gadi-cpu-clx-0325:3610266:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481587.352128] [gadi-cpu-clx-0325:3610263:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14e64d000000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481587.356565] [gadi-cpu-clx-0325:3610263:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481587.352016] [gadi-cpu-clx-0325:3610268:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x1515a5400000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481587.356571] [gadi-cpu-clx-0325:3610268:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481587.352031] [gadi-cpu-clx-0325:3610269:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14bb1ba00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481587.356681] [gadi-cpu-clx-0325:3610269:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481587.352107] [gadi-cpu-clx-0325:3610267:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x1486bd400000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481587.356649] [gadi-cpu-clx-0325:3610267:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481587.352108] [gadi-cpu-clx-0325:3610272:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14763de00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481587.356568] [gadi-cpu-clx-0325:3610272:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481587.351977] [gadi-cpu-clx-0325:3610271:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14c47ca00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481587.356599] [gadi-cpu-clx-0325:3610271:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481587.352007] [gadi-cpu-clx-0325:3610279:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x15010ca00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481587.356555] [gadi-cpu-clx-0325:3610279:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481587.352126] [gadi-cpu-clx-0325:3610276:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x1465fb000000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481587.356586] [gadi-cpu-clx-0325:3610276:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481587.352103] [gadi-cpu-clx-0325:3610282:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x1509bc600000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481587.356587] [gadi-cpu-clx-0325:3610282:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481587.352018] [gadi-cpu-clx-0325:3610299:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x15149b600000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481587.356645] [gadi-cpu-clx-0325:3610299:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481587.351954] [gadi-cpu-clx-0325:3610349:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x1475bbc00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481587.356575] [gadi-cpu-clx-0325:3610349:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481587.351950] [gadi-cpu-clx-0325:3610356:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x150701400000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481587.356670] [gadi-cpu-clx-0325:3610356:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+Job 41273229 has exceeded memory allocation on node gadi-cpu-clx-0325.gadi.nci.org.au
+Process "bash", pid 3609277, rss 3493888, vmem 21667840
+Process "pbs_demux", pid 3609287, rss 966656, vmem 11079680
+Process "41273229.gadi-p", pid 3609336, rss 2994176, vmem 10170368
+Process "mpirun", pid 3610238, rss 8155136, vmem 739442688
+Process "Task2-1", pid 3610251, rss 106561536, vmem 646742016
+Process "Task2-1", pid 3610252, rss 108613632, vmem 646737920
+Process "Task2-1", pid 3610253, rss 106496000, vmem 646737920
+Process "Task2-1", pid 3610254, rss 106536960, vmem 646737920
+Process "Task2-1", pid 3610255, rss 127537152, vmem 646733824
+Process "Task2-1", pid 3610256, rss 108642304, vmem 646737920
+Process "Task2-1", pid 3610257, rss 127582208, vmem 646737920
+Process "Task2-1", pid 3610258, rss 106672128, vmem 646737920
+Process "Task2-1", pid 3610260, rss 127504384, vmem 646737920
+Process "Task2-1", pid 3610261, rss 107069440, vmem 646737920
+Process "Task2-1", pid 3610262, rss 106295296, vmem 646737920
+Process "Task2-1", pid 3610263, rss 104435712, vmem 646746112
+Process "Task2-1", pid 3610264, rss 104452096, vmem 646746112
+Process "Task2-1", pid 3610265, rss 106426368, vmem 646737920
+Process "Task2-1", pid 3610266, rss 104689664, vmem 646737920
+Process "Task2-1", pid 3610267, rss 108498944, vmem 646742016
+Process "Task2-1", pid 3610268, rss 106643456, vmem 646746112
+Process "Task2-1", pid 3610269, rss 104280064, vmem 646742016
+Process "Task2-1", pid 3610270, rss 127533056, vmem 646746112
+Process "Task2-1", pid 3610271, rss 104296448, vmem 646737920
+Process "Task2-1", pid 3610272, rss 106463232, vmem 646742016
+Process "Task2-1", pid 3610273, rss 127528960, vmem 646746112
+Process "Task2-1", pid 3610274, rss 127533056, vmem 646746112
+Process "Task2-1", pid 3610275, rss 127434752, vmem 646737920
+Process "Task2-1", pid 3610276, rss 106463232, vmem 646746112
+Process "Task2-1", pid 3610279, rss 106475520, vmem 646746112
+Process "Task2-1", pid 3610280, rss 127467520, vmem 646742016
+Process "Task2-1", pid 3610281, rss 108527616, vmem 646742016
+Process "Task2-1", pid 3610282, rss 108486656, vmem 646737920
+Process "Task2-1", pid 3610285, rss 106532864, vmem 646737920
+Process "Task2-1", pid 3610299, rss 106467328, vmem 646737920
+Process "Task2-1", pid 3610300, rss 127545344, vmem 646742016
+Process "Task2-1", pid 3610305, rss 127561728, vmem 646746112
+Process "Task2-1", pid 3610306, rss 127508480, vmem 646742016
+Process "Task2-1", pid 3610316, rss 106442752, vmem 646746112
+Process "Task2-1", pid 3610325, rss 106483712, vmem 646746112
+Process "Task2-1", pid 3610329, rss 127504384, vmem 646742016
+Process "Task2-1", pid 3610330, rss 127598592, vmem 646737920
+Process "Task2-1", pid 3610335, rss 106491904, vmem 646737920
+Process "Task2-1", pid 3610338, rss 127602688, vmem 646742016
+Process "Task2-1", pid 3610340, rss 106516480, vmem 646742016
+Process "Task2-1", pid 3610343, rss 108650496, vmem 646750208
+Process "Task2-1", pid 3610349, rss 106500096, vmem 646737920
+Process "Task2-1", pid 3610354, rss 108568576, vmem 646746112
+Process "Task2-1", pid 3610356, rss 106549248, vmem 646742016
+Process "Task2-1", pid 3610360, rss 106496000, vmem 646737920
+Process "Task2-1", pid 3610362, rss 106291200, vmem 646742016
+------------------------------------------------------------------------
+For more information visit https://opus.nci.org.au/x/SwGRAQ
+------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 8 with PID 0 on node gadi-cpu-clx-0325 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+Job 41273229 has exceeded memory allocation on node gadi-cpu-clx-0325.gadi.nci.org.au
+Process "bash", pid 3609277, rss 3493888, vmem 21667840
+Process "pbs_demux", pid 3609287, rss 966656, vmem 11079680
+Process "41273229.gadi-p", pid 3609336, rss 2994176, vmem 10170368
+Process "mpirun", pid 3611125, rss 8343552, vmem 739442688
+Process "Task2-1", pid 3611138, rss 127426560, vmem 646737920
+Process "Task2-1", pid 3611139, rss 93810688, vmem 638980096
+Process "Task2-1", pid 3611140, rss 127451136, vmem 646737920
+Process "Task2-1", pid 3611141, rss 121925632, vmem 638976000
+Process "Task2-1", pid 3611142, rss 105017344, vmem 638976000
+Process "Task2-1", pid 3611143, rss 127422464, vmem 646733824
+Process "Task2-1", pid 3611144, rss 127578112, vmem 646737920
+Process "Task2-1", pid 3611145, rss 94539776, vmem 638976000
+Process "Task2-1", pid 3611146, rss 127602688, vmem 646733824
+Process "Task2-1", pid 3611147, rss 94593024, vmem 638971904
+Process "Task2-1", pid 3611148, rss 127369216, vmem 646742016
+Process "Task2-1", pid 3611149, rss 121839616, vmem 638980096
+Process "Task2-1", pid 3611150, rss 127463424, vmem 646742016
+Process "Task2-1", pid 3611151, rss 109244416, vmem 638984192
+Process "Task2-1", pid 3611152, rss 90505216, vmem 638980096
+Process "Task2-1", pid 3611153, rss 105074688, vmem 638984192
+Process "Task2-1", pid 3611154, rss 127557632, vmem 646742016
+Process "Task2-1", pid 3611155, rss 94507008, vmem 638980096
+Process "Task2-1", pid 3611156, rss 127488000, vmem 646746112
+Process "Task2-1", pid 3611157, rss 127344640, vmem 646742016
+Process "Task2-1", pid 3611158, rss 127598592, vmem 646742016
+Process "Task2-1", pid 3611159, rss 100896768, vmem 638980096
+Process "Task2-1", pid 3611160, rss 102952960, vmem 638976000
+Process "Task2-1", pid 3611161, rss 115458048, vmem 638980096
+Process "Task2-1", pid 3611162, rss 103256064, vmem 638980096
+Process "Task2-1", pid 3611163, rss 100859904, vmem 638976000
+Process "Task2-1", pid 3611164, rss 94613504, vmem 638976000
+Process "Task2-1", pid 3611167, rss 115585024, vmem 638976000
+Process "Task2-1", pid 3611168, rss 90349568, vmem 638980096
+Process "Task2-1", pid 3611171, rss 111374336, vmem 638980096
+Process "Task2-1", pid 3611172, rss 107405312, vmem 638976000
+Process "Task2-1", pid 3611174, rss 114814976, vmem 638980096
+Process "Task2-1", pid 3611175, rss 92434432, vmem 638980096
+Process "Task2-1", pid 3611181, rss 127692800, vmem 646737920
+Process "Task2-1", pid 3611185, rss 92688384, vmem 638976000
+Process "Task2-1", pid 3611192, rss 111329280, vmem 638976000
+Process "Task2-1", pid 3611202, rss 111161344, vmem 638980096
+Process "Task2-1", pid 3611204, rss 127434752, vmem 646737920
+Process "Task2-1", pid 3611205, rss 94638080, vmem 638980096
+Process "Task2-1", pid 3611214, rss 90333184, vmem 638980096
+Process "Task2-1", pid 3611216, rss 111366144, vmem 638980096
+Process "Task2-1", pid 3611217, rss 95416320, vmem 638980096
+Process "Task2-1", pid 3611220, rss 96612352, vmem 638976000
+Process "Task2-1", pid 3611222, rss 115572736, vmem 638976000
+Process "Task2-1", pid 3611224, rss 109420544, vmem 638980096
+Process "Task2-1", pid 3611228, rss 88252416, vmem 638976000
+Process "Task2-1", pid 3611229, rss 127365120, vmem 646737920
+Process "Task2-1", pid 3611234, rss 117899264, vmem 638984192
+------------------------------------------------------------------------
+For more information visit https://opus.nci.org.au/x/SwGRAQ
+------------------------------------------------------------------------
+[1653481595.554010] [gadi-cpu-clx-0325:3611139:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x151db4e00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481595.556883] [gadi-cpu-clx-0325:3611139:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481595.554033] [gadi-cpu-clx-0325:3611151:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14e2b0800000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481595.557038] [gadi-cpu-clx-0325:3611151:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481595.554052] [gadi-cpu-clx-0325:3611160:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14fa92a00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481595.556955] [gadi-cpu-clx-0325:3611160:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481595.554022] [gadi-cpu-clx-0325:3611168:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14816ce00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481595.556848] [gadi-cpu-clx-0325:3611168:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481595.554175] [gadi-cpu-clx-0325:3611174:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x1529e7000000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481595.557137] [gadi-cpu-clx-0325:3611174:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481595.554174] [gadi-cpu-clx-0325:3611192:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14ccaec00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481595.556969] [gadi-cpu-clx-0325:3611192:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481595.554040] [gadi-cpu-clx-0325:3611205:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x146a02600000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481595.556871] [gadi-cpu-clx-0325:3611205:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481595.554067] [gadi-cpu-clx-0325:3611216:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14d1df800000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481595.556856] [gadi-cpu-clx-0325:3611216:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481595.554017] [gadi-cpu-clx-0325:3611214:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14f744c00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481595.556792] [gadi-cpu-clx-0325:3611214:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481595.554066] [gadi-cpu-clx-0325:3611217:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x151ddb600000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481595.556997] [gadi-cpu-clx-0325:3611217:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481595.554057] [gadi-cpu-clx-0325:3611224:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x154a02e00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481595.557009] [gadi-cpu-clx-0325:3611224:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481595.554156] [gadi-cpu-clx-0325:3611228:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x149ded200000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481595.556724] [gadi-cpu-clx-0325:3611228:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481595.554081] [gadi-cpu-clx-0325:3611234:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x151a0a400000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481595.557057] [gadi-cpu-clx-0325:3611234:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481595.554090] [gadi-cpu-clx-0325:3611142:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14ed71600000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481595.556927] [gadi-cpu-clx-0325:3611142:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481595.554071] [gadi-cpu-clx-0325:3611145:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x147dfd000000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481595.556849] [gadi-cpu-clx-0325:3611145:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481595.554150] [gadi-cpu-clx-0325:3611147:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x1455e3000000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481595.556903] [gadi-cpu-clx-0325:3611147:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481595.554077] [gadi-cpu-clx-0325:3611152:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x150879400000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481595.556773] [gadi-cpu-clx-0325:3611152:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481595.554062] [gadi-cpu-clx-0325:3611153:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x146f48600000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481595.556943] [gadi-cpu-clx-0325:3611153:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481595.554059] [gadi-cpu-clx-0325:3611155:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14c9b5e00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481595.556859] [gadi-cpu-clx-0325:3611155:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481595.554035] [gadi-cpu-clx-0325:3611159:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x1473bec00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481595.556945] [gadi-cpu-clx-0325:3611159:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481595.554073] [gadi-cpu-clx-0325:3611161:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x154e33a00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481595.557045] [gadi-cpu-clx-0325:3611161:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481595.554040] [gadi-cpu-clx-0325:3611162:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x1485f4e00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481595.556910] [gadi-cpu-clx-0325:3611162:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481595.554147] [gadi-cpu-clx-0325:3611163:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x148a94c00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481595.556887] [gadi-cpu-clx-0325:3611163:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481595.554080] [gadi-cpu-clx-0325:3611164:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14648b600000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481595.556741] [gadi-cpu-clx-0325:3611164:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481595.554174] [gadi-cpu-clx-0325:3611167:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14ebf9c00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481595.557039] [gadi-cpu-clx-0325:3611167:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481595.554085] [gadi-cpu-clx-0325:3611171:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x149a75400000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481595.556999] [gadi-cpu-clx-0325:3611171:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481595.554094] [gadi-cpu-clx-0325:3611172:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14f044400000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481595.556893] [gadi-cpu-clx-0325:3611172:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481595.554031] [gadi-cpu-clx-0325:3611175:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x153aef200000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481595.556704] [gadi-cpu-clx-0325:3611175:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481595.554084] [gadi-cpu-clx-0325:3611185:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14e583e00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481595.556768] [gadi-cpu-clx-0325:3611185:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481595.554026] [gadi-cpu-clx-0325:3611202:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14bce2400000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481595.557164] [gadi-cpu-clx-0325:3611202:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481595.554018] [gadi-cpu-clx-0325:3611220:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x1494c1600000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481595.556906] [gadi-cpu-clx-0325:3611220:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481595.554130] [gadi-cpu-clx-0325:3611222:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14fe04200000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481595.557027] [gadi-cpu-clx-0325:3611222:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+Job 41273229 has exceeded memory allocation on node gadi-cpu-clx-0325.gadi.nci.org.au
+Process "bash", pid 3609277, rss 3493888, vmem 21667840
+Process "pbs_demux", pid 3609287, rss 966656, vmem 11079680
+Process "41273229.gadi-p", pid 3609336, rss 2994176, vmem 10170368
+Process "mpirun", pid 3611125, rss 8212480, vmem 739442688
+Process "Task2-1", pid 3611138, rss 127438848, vmem 646737920
+Process "Task2-1", pid 3611139, rss 110637056, vmem 646742016
+Process "Task2-1", pid 3611140, rss 127238144, vmem 646737920
+Process "Task2-1", pid 3611141, rss 127610880, vmem 646737920
+Process "Task2-1", pid 3611142, rss 110825472, vmem 646737920
+Process "Task2-1", pid 3611143, rss 127631360, vmem 646733824
+Process "Task2-1", pid 3611144, rss 127569920, vmem 646737920
+Process "Task2-1", pid 3611145, rss 110657536, vmem 646737920
+Process "Task2-1", pid 3611146, rss 127692800, vmem 646733824
+Process "Task2-1", pid 3611147, rss 110882816, vmem 646733824
+Process "Task2-1", pid 3611148, rss 127479808, vmem 646742016
+Process "Task2-1", pid 3611149, rss 127442944, vmem 646742016
+Process "Task2-1", pid 3611150, rss 127455232, vmem 646742016
+Process "Task2-1", pid 3611151, rss 108466176, vmem 646746112
+Process "Task2-1", pid 3611152, rss 110743552, vmem 646742016
+Process "Task2-1", pid 3611153, rss 108556288, vmem 646746112
+Process "Task2-1", pid 3611154, rss 127365120, vmem 646742016
+Process "Task2-1", pid 3611155, rss 108457984, vmem 646742016
+Process "Task2-1", pid 3611156, rss 127279104, vmem 646746112
+Process "Task2-1", pid 3611157, rss 127516672, vmem 646742016
+Process "Task2-1", pid 3611158, rss 127811584, vmem 646742016
+Process "Task2-1", pid 3611159, rss 108535808, vmem 646742016
+Process "Task2-1", pid 3611160, rss 108515328, vmem 646737920
+Process "Task2-1", pid 3611161, rss 108597248, vmem 646742016
+Process "Task2-1", pid 3611162, rss 104402944, vmem 646742016
+Process "Task2-1", pid 3611163, rss 104361984, vmem 646737920
+Process "Task2-1", pid 3611164, rss 102260736, vmem 646737920
+Process "Task2-1", pid 3611167, rss 102268928, vmem 646737920
+Process "Task2-1", pid 3611168, rss 104284160, vmem 646742016
+Process "Task2-1", pid 3611171, rss 104337408, vmem 646742016
+Process "Task2-1", pid 3611172, rss 102416384, vmem 646737920
+Process "Task2-1", pid 3611174, rss 102248448, vmem 646742016
+Process "Task2-1", pid 3611175, rss 104321024, vmem 646742016
+Process "Task2-1", pid 3611185, rss 106553344, vmem 646737920
+Process "Task2-1", pid 3611192, rss 102252544, vmem 646737920
+Process "Task2-1", pid 3611202, rss 102309888, vmem 646742016
+Process "Task2-1", pid 3611204, rss 127619072, vmem 646737920
+Process "Task2-1", pid 3611205, rss 106500096, vmem 646742016
+Process "Task2-1", pid 3611214, rss 104259584, vmem 646742016
+Process "Task2-1", pid 3611216, rss 104325120, vmem 646742016
+Process "Task2-1", pid 3611217, rss 106483712, vmem 646742016
+Process "Task2-1", pid 3611220, rss 104251392, vmem 646737920
+Process "Task2-1", pid 3611222, rss 104394752, vmem 646737920
+Process "Task2-1", pid 3611224, rss 104484864, vmem 646742016
+Process "Task2-1", pid 3611228, rss 104218624, vmem 646737920
+Process "Task2-1", pid 3611229, rss 127557632, vmem 646737920
+Process "Task2-1", pid 3611234, rss 104390656, vmem 646746112
+------------------------------------------------------------------------
+For more information visit https://opus.nci.org.au/x/SwGRAQ
+------------------------------------------------------------------------
+[1653481595.698099] [gadi-cpu-clx-0325:3611234:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x151a09e00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481595.701890] [gadi-cpu-clx-0325:3611234:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481595.698073] [gadi-cpu-clx-0325:3611142:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14ed71000000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481595.701880] [gadi-cpu-clx-0325:3611142:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481595.698118] [gadi-cpu-clx-0325:3611145:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x147dfca00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481595.710711] [gadi-cpu-clx-0325:3611145:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481595.698051] [gadi-cpu-clx-0325:3611139:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x151db4800000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481595.701881] [gadi-cpu-clx-0325:3611139:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481595.698046] [gadi-cpu-clx-0325:3611147:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x1455e2a00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481595.710719] [gadi-cpu-clx-0325:3611147:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481595.698044] [gadi-cpu-clx-0325:3611152:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x150878e00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481595.701895] [gadi-cpu-clx-0325:3611152:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481595.698166] [gadi-cpu-clx-0325:3611153:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x146f48000000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481595.701836] [gadi-cpu-clx-0325:3611153:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481595.698086] [gadi-cpu-clx-0325:3611155:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14c9b5800000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481595.701838] [gadi-cpu-clx-0325:3611155:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481595.698077] [gadi-cpu-clx-0325:3611151:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14e2b0200000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481595.701842] [gadi-cpu-clx-0325:3611151:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481595.698084] [gadi-cpu-clx-0325:3611159:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x1473be600000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481595.701871] [gadi-cpu-clx-0325:3611159:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481595.698116] [gadi-cpu-clx-0325:3611162:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x1485f4800000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481595.701837] [gadi-cpu-clx-0325:3611162:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481595.698173] [gadi-cpu-clx-0325:3611163:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x148a94600000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481595.701886] [gadi-cpu-clx-0325:3611163:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481595.698044] [gadi-cpu-clx-0325:3611160:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14fa92400000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481595.701874] [gadi-cpu-clx-0325:3611160:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481595.698090] [gadi-cpu-clx-0325:3611164:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14648ae00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481595.701830] [gadi-cpu-clx-0325:3611164:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481595.698100] [gadi-cpu-clx-0325:3611167:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14ebf9600000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481595.701888] [gadi-cpu-clx-0325:3611167:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481595.698089] [gadi-cpu-clx-0325:3611171:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x149a74e00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481595.701883] [gadi-cpu-clx-0325:3611171:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481595.698118] [gadi-cpu-clx-0325:3611172:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14f043e00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481595.701886] [gadi-cpu-clx-0325:3611172:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481595.698070] [gadi-cpu-clx-0325:3611168:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14816c800000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481595.701889] [gadi-cpu-clx-0325:3611168:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481595.698111] [gadi-cpu-clx-0325:3611222:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14fe03c00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481595.701898] [gadi-cpu-clx-0325:3611222:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481595.698105] [gadi-cpu-clx-0325:3611228:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x149decc00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481595.701865] [gadi-cpu-clx-0325:3611228:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481595.698102] [gadi-cpu-clx-0325:3611175:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x153aeec00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481595.701863] [gadi-cpu-clx-0325:3611175:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481595.698104] [gadi-cpu-clx-0325:3611185:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14e583800000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481595.701896] [gadi-cpu-clx-0325:3611185:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481595.698060] [gadi-cpu-clx-0325:3611174:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x1529e6a00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481595.710696] [gadi-cpu-clx-0325:3611174:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481595.698100] [gadi-cpu-clx-0325:3611192:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14ccae600000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481595.701853] [gadi-cpu-clx-0325:3611192:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481595.698119] [gadi-cpu-clx-0325:3611205:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x146a02000000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481595.701847] [gadi-cpu-clx-0325:3611205:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481595.698105] [gadi-cpu-clx-0325:3611216:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14d1df200000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481595.701858] [gadi-cpu-clx-0325:3611216:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481595.698108] [gadi-cpu-clx-0325:3611214:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14f744600000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481595.701872] [gadi-cpu-clx-0325:3611214:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481595.698063] [gadi-cpu-clx-0325:3611202:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14bce1e00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481595.701846] [gadi-cpu-clx-0325:3611202:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481595.698095] [gadi-cpu-clx-0325:3611217:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x151ddb000000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481595.701886] [gadi-cpu-clx-0325:3611217:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481595.698067] [gadi-cpu-clx-0325:3611220:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x1494c1000000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481595.701897] [gadi-cpu-clx-0325:3611220:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481595.698055] [gadi-cpu-clx-0325:3611224:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x154a02800000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481595.701855] [gadi-cpu-clx-0325:3611224:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+--------------------------------------------------------------------------
+mpirun noticed that process rank 33 with PID 0 on node gadi-cpu-clx-0325 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+Job 41273229 has exceeded memory allocation on node gadi-cpu-clx-0325.gadi.nci.org.au
+Process "bash", pid 3609277, rss 3493888, vmem 21667840
+Process "pbs_demux", pid 3609287, rss 966656, vmem 11079680
+Process "41273229.gadi-p", pid 3609336, rss 2994176, vmem 10170368
+Process "mpirun", pid 3612015, rss 8167424, vmem 739442688
+Process "Task2-1", pid 3612028, rss 111443968, vmem 638976000
+Process "Task2-1", pid 3612029, rss 127299584, vmem 646742016
+Process "Task2-1", pid 3612030, rss 124768256, vmem 641892352
+Process "Task2-1", pid 3612031, rss 98816000, vmem 638976000
+Process "Task2-1", pid 3612032, rss 93048832, vmem 638980096
+Process "Task2-1", pid 3612033, rss 113524736, vmem 638976000
+Process "Task2-1", pid 3612034, rss 107188224, vmem 638976000
+Process "Task2-1", pid 3612035, rss 127537152, vmem 646733824
+Process "Task2-1", pid 3612036, rss 96956416, vmem 638976000
+Process "Task2-1", pid 3612037, rss 101117952, vmem 638976000
+Process "Task2-1", pid 3612038, rss 100831232, vmem 638976000
+Process "Task2-1", pid 3612039, rss 109232128, vmem 638976000
+Process "Task2-1", pid 3612040, rss 111771648, vmem 638984192
+Process "Task2-1", pid 3612041, rss 99188736, vmem 638984192
+Process "Task2-1", pid 3612042, rss 96854016, vmem 638980096
+Process "Task2-1", pid 3612043, rss 101625856, vmem 638980096
+Process "Task2-1", pid 3612044, rss 123523072, vmem 640770048
+Process "Task2-1", pid 3612045, rss 107384832, vmem 638976000
+Process "Task2-1", pid 3612046, rss 96608256, vmem 638980096
+Process "Task2-1", pid 3612047, rss 91488256, vmem 638984192
+Process "Task2-1", pid 3612048, rss 127254528, vmem 646737920
+Process "Task2-1", pid 3612049, rss 127381504, vmem 646742016
+Process "Task2-1", pid 3612050, rss 111706112, vmem 638984192
+Process "Task2-1", pid 3612051, rss 94560256, vmem 638976000
+Process "Task2-1", pid 3612052, rss 101847040, vmem 638976000
+Process "Task2-1", pid 3612053, rss 127307776, vmem 646742016
+Process "Task2-1", pid 3612054, rss 96681984, vmem 638984192
+Process "Task2-1", pid 3612055, rss 92766208, vmem 638980096
+Process "Task2-1", pid 3612056, rss 103038976, vmem 638976000
+Process "Task2-1", pid 3612059, rss 107417600, vmem 638976000
+Process "Task2-1", pid 3612060, rss 123555840, vmem 640765952
+Process "Task2-1", pid 3612063, rss 127426560, vmem 646737920
+Process "Task2-1", pid 3612064, rss 103256064, vmem 638976000
+Process "Task2-1", pid 3612065, rss 123768832, vmem 640761856
+Process "Task2-1", pid 3612068, rss 127389696, vmem 646746112
+Process "Task2-1", pid 3612070, rss 127422464, vmem 646737920
+Process "Task2-1", pid 3612076, rss 92569600, vmem 638980096
+Process "Task2-1", pid 3612081, rss 90955776, vmem 638976000
+Process "Task2-1", pid 3612086, rss 94638080, vmem 638984192
+Process "Task2-1", pid 3612095, rss 127426560, vmem 646746112
+Process "Task2-1", pid 3612098, rss 127332352, vmem 646742016
+Process "Task2-1", pid 3612102, rss 111443968, vmem 638980096
+Process "Task2-1", pid 3612106, rss 127422464, vmem 646742016
+Process "Task2-1", pid 3612111, rss 100749312, vmem 638976000
+Process "Task2-1", pid 3612114, rss 127508480, vmem 646742016
+Process "Task2-1", pid 3612119, rss 127389696, vmem 646742016
+Process "Task2-1", pid 3612121, rss 115634176, vmem 638976000
+Process "Task2-1", pid 3612126, rss 94937088, vmem 638980096
+------------------------------------------------------------------------
+For more information visit https://opus.nci.org.au/x/SwGRAQ
+------------------------------------------------------------------------
+[1653481604.223944] [gadi-cpu-clx-0325:3612036:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x150a32a00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481604.226519] [gadi-cpu-clx-0325:3612036:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481604.223938] [gadi-cpu-clx-0325:3612052:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x146772800000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481604.226382] [gadi-cpu-clx-0325:3612052:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481604.223934] [gadi-cpu-clx-0325:3612055:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14b3a1e00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481604.226325] [gadi-cpu-clx-0325:3612055:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481604.223953] [gadi-cpu-clx-0325:3612056:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x1459ce200000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481604.226479] [gadi-cpu-clx-0325:3612056:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481604.223982] [gadi-cpu-clx-0325:3612081:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x152131800000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481604.226263] [gadi-cpu-clx-0325:3612081:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481604.223949] [gadi-cpu-clx-0325:3612111:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14a61b800000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481604.226500] [gadi-cpu-clx-0325:3612111:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481604.223933] [gadi-cpu-clx-0325:3612102:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14d4a8000000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481604.226490] [gadi-cpu-clx-0325:3612102:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481604.223961] [gadi-cpu-clx-0325:3612121:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x1473b2200000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481604.226546] [gadi-cpu-clx-0325:3612121:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481604.223999] [gadi-cpu-clx-0325:3612028:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14a13c800000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481604.226551] [gadi-cpu-clx-0325:3612028:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481604.223977] [gadi-cpu-clx-0325:3612031:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x147dec600000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481604.226431] [gadi-cpu-clx-0325:3612031:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481604.223956] [gadi-cpu-clx-0325:3612032:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x1457a7c00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481604.226442] [gadi-cpu-clx-0325:3612032:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481604.224062] [gadi-cpu-clx-0325:3612033:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x147388e00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481604.226555] [gadi-cpu-clx-0325:3612033:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481604.224068] [gadi-cpu-clx-0325:3612034:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14664f400000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481604.226538] [gadi-cpu-clx-0325:3612034:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481604.223986] [gadi-cpu-clx-0325:3612037:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x153e63200000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481604.226520] [gadi-cpu-clx-0325:3612037:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481604.224063] [gadi-cpu-clx-0325:3612039:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14a09d200000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481604.226506] [gadi-cpu-clx-0325:3612039:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481604.224064] [gadi-cpu-clx-0325:3612038:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14e63ea00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481604.226517] [gadi-cpu-clx-0325:3612038:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481604.223983] [gadi-cpu-clx-0325:3612040:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x15117be00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481604.226586] [gadi-cpu-clx-0325:3612040:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481604.223981] [gadi-cpu-clx-0325:3612041:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x151f4ba00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481604.226351] [gadi-cpu-clx-0325:3612041:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481604.224052] [gadi-cpu-clx-0325:3612043:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14a409800000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481604.226573] [gadi-cpu-clx-0325:3612043:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481604.224061] [gadi-cpu-clx-0325:3612042:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x15478b600000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481604.226446] [gadi-cpu-clx-0325:3612042:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481604.223982] [gadi-cpu-clx-0325:3612045:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14e061600000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481604.226564] [gadi-cpu-clx-0325:3612045:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481604.223974] [gadi-cpu-clx-0325:3612047:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x15014a200000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481604.226558] [gadi-cpu-clx-0325:3612047:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481604.223980] [gadi-cpu-clx-0325:3612046:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x1484d1400000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481604.226361] [gadi-cpu-clx-0325:3612046:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481604.223964] [gadi-cpu-clx-0325:3612050:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x151f4d200000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481604.226577] [gadi-cpu-clx-0325:3612050:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481604.223950] [gadi-cpu-clx-0325:3612051:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14af95800000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481604.226421] [gadi-cpu-clx-0325:3612051:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481604.224004] [gadi-cpu-clx-0325:3612054:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x148907000000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481604.226319] [gadi-cpu-clx-0325:3612054:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481604.223989] [gadi-cpu-clx-0325:3612059:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14ae0ec00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481604.226515] [gadi-cpu-clx-0325:3612059:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481604.223997] [gadi-cpu-clx-0325:3612076:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x153fcde00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481604.226376] [gadi-cpu-clx-0325:3612076:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481604.223972] [gadi-cpu-clx-0325:3612126:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x15539f800000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481604.226354] [gadi-cpu-clx-0325:3612126:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+Job 41273229 has exceeded memory allocation on node gadi-cpu-clx-0325.gadi.nci.org.au
+Process "bash", pid 3609277, rss 3493888, vmem 21667840
+Process "pbs_demux", pid 3609287, rss 966656, vmem 11079680
+Process "41273229.gadi-p", pid 3609336, rss 2994176, vmem 10170368
+Process "mpirun", pid 3612015, rss 8241152, vmem 739442688
+Process "Task2-1", pid 3612028, rss 100167680, vmem 646737920
+Process "Task2-1", pid 3612029, rss 127451136, vmem 646742016
+Process "Task2-1", pid 3612030, rss 127520768, vmem 646737920
+Process "Task2-1", pid 3612031, rss 104357888, vmem 646737920
+Process "Task2-1", pid 3612032, rss 104611840, vmem 646742016
+Process "Task2-1", pid 3612033, rss 104411136, vmem 646737920
+Process "Task2-1", pid 3612034, rss 102273024, vmem 646737920
+Process "Task2-1", pid 3612036, rss 104382464, vmem 646737920
+Process "Task2-1", pid 3612037, rss 102199296, vmem 646737920
+Process "Task2-1", pid 3612038, rss 104308736, vmem 646737920
+Process "Task2-1", pid 3612039, rss 102191104, vmem 646737920
+Process "Task2-1", pid 3612040, rss 102096896, vmem 646746112
+Process "Task2-1", pid 3612041, rss 104452096, vmem 646746112
+Process "Task2-1", pid 3612042, rss 104206336, vmem 646742016
+Process "Task2-1", pid 3612043, rss 100126720, vmem 646742016
+Process "Task2-1", pid 3612044, rss 127561728, vmem 646746112
+Process "Task2-1", pid 3612045, rss 102158336, vmem 646737920
+Process "Task2-1", pid 3612046, rss 104206336, vmem 646742016
+Process "Task2-1", pid 3612047, rss 104357888, vmem 646746112
+Process "Task2-1", pid 3612048, rss 127418368, vmem 646737920
+Process "Task2-1", pid 3612049, rss 127545344, vmem 646742016
+Process "Task2-1", pid 3612050, rss 102518784, vmem 646746112
+Process "Task2-1", pid 3612051, rss 102215680, vmem 646737920
+Process "Task2-1", pid 3612052, rss 104452096, vmem 646737920
+Process "Task2-1", pid 3612053, rss 127451136, vmem 646742016
+Process "Task2-1", pid 3612054, rss 104312832, vmem 646746112
+Process "Task2-1", pid 3612055, rss 106377216, vmem 646742016
+Process "Task2-1", pid 3612056, rss 104284160, vmem 646737920
+Process "Task2-1", pid 3612059, rss 108449792, vmem 646737920
+Process "Task2-1", pid 3612060, rss 127549440, vmem 646742016
+Process "Task2-1", pid 3612063, rss 127578112, vmem 646737920
+Process "Task2-1", pid 3612064, rss 127377408, vmem 646737920
+Process "Task2-1", pid 3612065, rss 127504384, vmem 646737920
+Process "Task2-1", pid 3612068, rss 127447040, vmem 646746112
+Process "Task2-1", pid 3612070, rss 127467520, vmem 646737920
+Process "Task2-1", pid 3612076, rss 104394752, vmem 646742016
+Process "Task2-1", pid 3612081, rss 104333312, vmem 646737920
+Process "Task2-1", pid 3612086, rss 127631360, vmem 646746112
+Process "Task2-1", pid 3612095, rss 127479808, vmem 646746112
+Process "Task2-1", pid 3612098, rss 127479808, vmem 646742016
+Process "Task2-1", pid 3612102, rss 104394752, vmem 646742016
+Process "Task2-1", pid 3612106, rss 127410176, vmem 646742016
+Process "Task2-1", pid 3612111, rss 104120320, vmem 646737920
+Process "Task2-1", pid 3612114, rss 127488000, vmem 646742016
+Process "Task2-1", pid 3612119, rss 127614976, vmem 646742016
+Process "Task2-1", pid 3612121, rss 102449152, vmem 646737920
+Process "Task2-1", pid 3612126, rss 104341504, vmem 646742016
+------------------------------------------------------------------------
+For more information visit https://opus.nci.org.au/x/SwGRAQ
+------------------------------------------------------------------------
+[1653481604.388971] [gadi-cpu-clx-0325:3612121:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x1473b1c00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481604.393128] [gadi-cpu-clx-0325:3612121:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481604.389071] [gadi-cpu-clx-0325:3612028:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14a13c200000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481604.393144] [gadi-cpu-clx-0325:3612028:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481604.388956] [gadi-cpu-clx-0325:3612031:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x147dec000000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481604.393115] [gadi-cpu-clx-0325:3612031:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481604.388978] [gadi-cpu-clx-0325:3612032:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x1457a7600000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481604.393153] [gadi-cpu-clx-0325:3612032:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481604.388967] [gadi-cpu-clx-0325:3612126:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x15539f200000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481604.393140] [gadi-cpu-clx-0325:3612126:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481604.388974] [gadi-cpu-clx-0325:3612033:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x147388800000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481604.393134] [gadi-cpu-clx-0325:3612033:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481604.389003] [gadi-cpu-clx-0325:3612034:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14664ee00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481604.393139] [gadi-cpu-clx-0325:3612034:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481604.388934] [gadi-cpu-clx-0325:3612037:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x153e62a00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481604.393117] [gadi-cpu-clx-0325:3612037:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481604.388980] [gadi-cpu-clx-0325:3612039:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14a09cc00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481604.393132] [gadi-cpu-clx-0325:3612039:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481604.388964] [gadi-cpu-clx-0325:3612038:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14e63e400000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481604.393143] [gadi-cpu-clx-0325:3612038:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481604.388978] [gadi-cpu-clx-0325:3612040:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x15117b800000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481604.393147] [gadi-cpu-clx-0325:3612040:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481604.389010] [gadi-cpu-clx-0325:3612041:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x151f4b400000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481604.393158] [gadi-cpu-clx-0325:3612041:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481604.388984] [gadi-cpu-clx-0325:3612043:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14a409200000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481604.393154] [gadi-cpu-clx-0325:3612043:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481604.388982] [gadi-cpu-clx-0325:3612042:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x15478b000000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481604.393128] [gadi-cpu-clx-0325:3612042:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481604.389079] [gadi-cpu-clx-0325:3612045:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14e061000000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481604.393149] [gadi-cpu-clx-0325:3612045:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481604.388982] [gadi-cpu-clx-0325:3612047:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x150149c00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481604.393105] [gadi-cpu-clx-0325:3612047:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481604.389091] [gadi-cpu-clx-0325:3612046:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x1484d0e00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481604.393151] [gadi-cpu-clx-0325:3612046:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481604.389053] [gadi-cpu-clx-0325:3612050:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x151f4cc00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481604.393159] [gadi-cpu-clx-0325:3612050:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481604.388953] [gadi-cpu-clx-0325:3612036:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x150a32400000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481604.393160] [gadi-cpu-clx-0325:3612036:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481604.389083] [gadi-cpu-clx-0325:3612051:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14af95200000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481604.393140] [gadi-cpu-clx-0325:3612051:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481604.389078] [gadi-cpu-clx-0325:3612052:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x146772200000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481604.393113] [gadi-cpu-clx-0325:3612052:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481604.389095] [gadi-cpu-clx-0325:3612055:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14b3a1800000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481604.393099] [gadi-cpu-clx-0325:3612055:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481604.388981] [gadi-cpu-clx-0325:3612054:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x148906a00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481604.401224] [gadi-cpu-clx-0325:3612054:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481604.388986] [gadi-cpu-clx-0325:3612059:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14ae0e600000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481604.393125] [gadi-cpu-clx-0325:3612059:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481604.389030] [gadi-cpu-clx-0325:3612056:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x1459cdc00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481604.393144] [gadi-cpu-clx-0325:3612056:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481604.389087] [gadi-cpu-clx-0325:3612081:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x152131200000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481604.393152] [gadi-cpu-clx-0325:3612081:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481604.388960] [gadi-cpu-clx-0325:3612111:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14a61b200000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481604.393113] [gadi-cpu-clx-0325:3612111:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481604.388963] [gadi-cpu-clx-0325:3612102:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14d4a7a00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481604.401222] [gadi-cpu-clx-0325:3612102:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481604.389003] [gadi-cpu-clx-0325:3612076:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x153fcd800000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481604.393139] [gadi-cpu-clx-0325:3612076:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+--------------------------------------------------------------------------
+mpirun noticed that process rank 6 with PID 0 on node gadi-cpu-clx-0325 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+[1653481612.289379] [gadi-cpu-clx-0325:3612921:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14bb73400000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481612.289389] [gadi-cpu-clx-0325:3612920:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x1520de400000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481612.289399] [gadi-cpu-clx-0325:3612928:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14fae6000000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481612.289434] [gadi-cpu-clx-0325:3612937:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x1553e8800000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481612.289461] [gadi-cpu-clx-0325:3612939:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x146202200000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481612.289452] [gadi-cpu-clx-0325:3612936:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14b2ebc00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481612.289422] [gadi-cpu-clx-0325:3612941:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x154f63200000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481612.289404] [gadi-cpu-clx-0325:3612942:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x147b80200000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481612.289447] [gadi-cpu-clx-0325:3612940:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14b5f0200000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481612.289455] [gadi-cpu-clx-0325:3612949:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x1494f1800000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481612.289454] [gadi-cpu-clx-0325:3612954:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x145a2b600000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481612.289399] [gadi-cpu-clx-0325:3612946:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x148665800000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481612.289371] [gadi-cpu-clx-0325:3612961:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x145ccd000000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481612.289438] [gadi-cpu-clx-0325:3612968:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x148dbc000000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481612.292147] [gadi-cpu-clx-0325:3612968:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481612.289461] [gadi-cpu-clx-0325:3612969:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x1476f6400000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481612.289419] [gadi-cpu-clx-0325:3612979:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14c689400000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481612.292182] [gadi-cpu-clx-0325:3612979:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481612.289372] [gadi-cpu-clx-0325:3612975:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x1491b0800000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481612.292179] [gadi-cpu-clx-0325:3612975:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481612.289444] [gadi-cpu-clx-0325:3613000:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14fc6da00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481612.289386] [gadi-cpu-clx-0325:3612993:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x1481dd800000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481612.292162] [gadi-cpu-clx-0325:3612993:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481612.289427] [gadi-cpu-clx-0325:3613009:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14b877200000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481612.289384] [gadi-cpu-clx-0325:3612919:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14f8b5e00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481612.292519] [gadi-cpu-clx-0325:3612919:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481612.289520] [gadi-cpu-clx-0325:3612917:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x147b00800000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481612.292386] [gadi-cpu-clx-0325:3612917:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481612.289437] [gadi-cpu-clx-0325:3612918:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x153aa5e00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481612.292526] [gadi-cpu-clx-0325:3612918:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481612.292569] [gadi-cpu-clx-0325:3612921:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481612.289461] [gadi-cpu-clx-0325:3612922:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x154609400000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481612.292461] [gadi-cpu-clx-0325:3612922:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481612.289416] [gadi-cpu-clx-0325:3612924:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x153e68800000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481612.292309] [gadi-cpu-clx-0325:3612924:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481612.289417] [gadi-cpu-clx-0325:3612927:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14ba43800000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481612.292549] [gadi-cpu-clx-0325:3612927:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481612.289408] [gadi-cpu-clx-0325:3612925:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x145c4ca00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481612.292483] [gadi-cpu-clx-0325:3612925:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481612.289381] [gadi-cpu-clx-0325:3612926:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x1499a7e00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481612.292487] [gadi-cpu-clx-0325:3612926:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481612.292237] [gadi-cpu-clx-0325:3612920:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481612.289442] [gadi-cpu-clx-0325:3612930:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14ba66c00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481612.292396] [gadi-cpu-clx-0325:3612930:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481612.289449] [gadi-cpu-clx-0325:3612934:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14ef35c00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481612.292451] [gadi-cpu-clx-0325:3612934:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481612.289435] [gadi-cpu-clx-0325:3612935:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14d4dbc00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481612.292543] [gadi-cpu-clx-0325:3612935:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481612.289449] [gadi-cpu-clx-0325:3612933:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14dad0c00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481612.292187] [gadi-cpu-clx-0325:3612933:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481612.292411] [gadi-cpu-clx-0325:3612928:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481612.289465] [gadi-cpu-clx-0325:3612938:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14a4dae00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653481612.292491] [gadi-cpu-clx-0325:3612938:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481612.292322] [gadi-cpu-clx-0325:3612937:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481612.292233] [gadi-cpu-clx-0325:3612939:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481612.292346] [gadi-cpu-clx-0325:3612936:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481612.292367] [gadi-cpu-clx-0325:3612941:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481612.292542] [gadi-cpu-clx-0325:3612942:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481612.292471] [gadi-cpu-clx-0325:3612940:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481612.292387] [gadi-cpu-clx-0325:3612949:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481612.292318] [gadi-cpu-clx-0325:3612954:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481612.292504] [gadi-cpu-clx-0325:3612946:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481612.292422] [gadi-cpu-clx-0325:3612961:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481612.292459] [gadi-cpu-clx-0325:3612969:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481612.292376] [gadi-cpu-clx-0325:3613000:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653481612.292388] [gadi-cpu-clx-0325:3613009:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+Job 41273229 has exceeded memory allocation on node gadi-cpu-clx-0325.gadi.nci.org.au
+Process "bash", pid 3609277, rss 3493888, vmem 21667840
+Process "pbs_demux", pid 3609287, rss 966656, vmem 11079680
+Process "41273229.gadi-p", pid 3609336, rss 2994176, vmem 10170368
+Process "mpirun", pid 3612903, rss 8167424, vmem 739442688
+Process "Task2-2", pid 3612916, rss 127574016, vmem 646742016
+Process "Task2-2", pid 3612917, rss 104357888, vmem 646737920
+Process "Task2-2", pid 3612918, rss 106385408, vmem 646742016
+Process "Task2-2", pid 3612919, rss 106385408, vmem 646737920
+Process "Task2-2", pid 3612920, rss 106516480, vmem 646737920
+Process "Task2-2", pid 3612921, rss 104214528, vmem 646737920
+Process "Task2-2", pid 3612922, rss 104923136, vmem 646737920
+Process "Task2-2", pid 3612923, rss 127623168, vmem 646733824
+Process "Task2-2", pid 3612924, rss 104345600, vmem 646733824
+Process "Task2-2", pid 3612925, rss 104316928, vmem 646746112
+Process "Task2-2", pid 3612926, rss 104214528, vmem 646742016
+Process "Task2-2", pid 3612927, rss 106373120, vmem 646737920
+Process "Task2-2", pid 3612928, rss 104632320, vmem 646737920
+Process "Task2-2", pid 3612929, rss 127680512, vmem 646737920
+Process "Task2-2", pid 3612930, rss 106483712, vmem 646737920
+Process "Task2-2", pid 3612931, rss 127569920, vmem 646737920
+Process "Task2-2", pid 3612932, rss 127475712, vmem 646746112
+Process "Task2-2", pid 3612933, rss 107487232, vmem 646746112
+Process "Task2-2", pid 3612934, rss 106303488, vmem 646737920
+Process "Task2-2", pid 3612935, rss 104333312, vmem 646746112
+Process "Task2-2", pid 3612936, rss 104734720, vmem 646737920
+Process "Task2-2", pid 3612937, rss 106409984, vmem 646742016
+Process "Task2-2", pid 3612938, rss 104325120, vmem 646746112
+Process "Task2-2", pid 3612939, rss 108658688, vmem 646737920
+Process "Task2-2", pid 3612940, rss 108482560, vmem 646737920
+Process "Task2-2", pid 3612941, rss 110514176, vmem 646737920
+Process "Task2-2", pid 3612942, rss 108417024, vmem 646742016
+Process "Task2-2", pid 3612946, rss 106348544, vmem 646746112
+Process "Task2-2", pid 3612949, rss 106348544, vmem 646737920
+Process "Task2-2", pid 3612950, rss 127438848, vmem 646737920
+Process "Task2-2", pid 3612953, rss 127541248, vmem 646742016
+Process "Task2-2", pid 3612954, rss 104321024, vmem 646742016
+Process "Task2-2", pid 3612958, rss 127619072, vmem 646742016
+Process "Task2-2", pid 3612961, rss 110489600, vmem 646746112
+Process "Task2-2", pid 3612967, rss 127463424, vmem 646737920
+Process "Task2-2", pid 3612968, rss 108515328, vmem 646742016
+Process "Task2-2", pid 3612969, rss 108519424, vmem 646742016
+Process "Task2-2", pid 3612970, rss 127631360, vmem 646746112
+Process "Task2-2", pid 3612973, rss 127455232, vmem 646746112
+Process "Task2-2", pid 3612975, rss 102129664, vmem 646742016
+Process "Task2-2", pid 3612979, rss 108343296, vmem 646742016
+Process "Task2-2", pid 3612983, rss 127389696, vmem 646737920
+Process "Task2-2", pid 3612988, rss 127361024, vmem 646746112
+Process "Task2-2", pid 3612993, rss 108494848, vmem 646737920
+Process "Task2-2", pid 3612998, rss 127557632, vmem 646737920
+Process "Task2-2", pid 3613000, rss 108560384, vmem 646746112
+Process "Task2-2", pid 3613009, rss 110612480, vmem 646742016
+------------------------------------------------------------------------
+For more information visit https://opus.nci.org.au/x/SwGRAQ
+------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 26 with PID 0 on node gadi-cpu-clx-0325 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+=>> PBS: job killed: walltime 48 exceeded limit 45
+
+======================================================================================
+                  Resource Usage on 2022-05-25 22:27:12:
+   Job Id:             41273229.gadi-pbs
+   Project:            c37
+   Exit Status:        271 (Linux Signal 15 SIGTERM Termination)
+   Service Units:      3.09
+   NCPUs Requested:    96                     NCPUs Used: 96              
+                                           CPU Time Used: 00:26:19                                   
+   Memory Requested:   10.0GB                Memory Used: 6.92GB          
+   Walltime requested: 00:00:45            Walltime Used: 00:00:58        
+   JobFS requested:    200.0MB                JobFS used: 8.16MB          
+======================================================================================

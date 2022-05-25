@@ -7,18 +7,18 @@
 
 int malloc2dint(int ***array, int n, int m)
 {
-    //allocate the n*m contiguous items
+    // allocate the n*m contiguous items
     int *p = (int *)malloc(n * m * sizeof(int));
     if (!p)
         return -1;
-    //allocate the row pointers into the memory */
+    // allocate the row pointers into the memory */
     (*array) = (int **)malloc(n * sizeof(int *));
     if (!(*array))
     {
         free(p);
         return -1;
     }
-    //set up the pointers into the contiguous memory
+    // set up the pointers into the contiguous memory
     for (int i = 0; i < n; i++)
         (*array)[i] = &(p[i * m]);
     return 0;
@@ -86,10 +86,11 @@ int main(int argc, char **argv)
     MPI_Bcast(&column2, 1, MPI_INT, 0, MPI_COMM_WORLD);
     MPI_Bcast(&row2, 1, MPI_INT, 0, MPI_COMM_WORLD);
 
-    int column1_local = column1 / squaredP;
-    int row1_local = row1 / squaredP;
-    int column2_local = column2 / squaredP;
-    int row2_local = row2 / squaredP;
+    int block = 1;
+    int column1_local = (column1 / block) / squaredP;
+    int row1_local = (row1 / block) / squaredP;
+    int column2_local = (column2 / block) / squaredP;
+    int row2_local = (row2 / block) / squaredP;
     int row3 = row1;
     int column3 = column2;
 
@@ -160,7 +161,7 @@ int main(int argc, char **argv)
         {
             col_receive[i][j] = 0;
         }
-    } 
+    }
     for (int i = 0; i < row2_local; i++)
     {
         for (int j = 0; j < column2_local; j++)
@@ -168,9 +169,9 @@ int main(int argc, char **argv)
             row_receive[i][j] = 0;
         }
     }
-    
-    //Communication phase, split matrix into P processors
-    double start,end;
+
+    // Communication phase, split matrix into P processors
+    double start, end;
     start = MPI_Wtime();
     MPI_Scatterv(Aptr, sendcounts, displs, subarrtype, &(localA[0][0]), (row1_local) * (column1_local), MPI_INT, 0, MPI_COMM_WORLD);
     MPI_Scatterv(Bptr, sendcounts, displs, subarrtype, &(localB[0][0]), (row2_local) * (column2_local), MPI_INT, 0, MPI_COMM_WORLD);
@@ -178,7 +179,7 @@ int main(int argc, char **argv)
     col_message = localA;
     row_message = localB;
 
-    // SUMMA 
+    // SUMMA
     int column_procs_sender = 0;
     int row_procs_sender;
     int col_receiver = 0;
@@ -195,8 +196,8 @@ int main(int argc, char **argv)
                 {
                     if (row_procs_sender != row_receiver)
                     {
-                        MPI_Isend(&(col_message[0][0]),row1_local * column1_local,MPI_INT,row_receiver,0,MPI_COMM_WORLD, &request);
-                        MPI_Wait(&request,&status);
+                        MPI_Isend(&(col_message[0][0]), row1_local * column1_local, MPI_INT, row_receiver, 0, MPI_COMM_WORLD, &request);
+                        MPI_Wait(&request, &status);
                     }
                     else // receive my own message
                     {
@@ -206,14 +207,11 @@ int main(int argc, char **argv)
                 else if (my_rank == row_receiver)
                 {
                     MPI_Irecv(&(col_receive[0][0]), row1_local * column1_local, MPI_INT, row_procs_sender, 0, MPI_COMM_WORLD, &request);
-                    MPI_Wait(&request,&status);
+                    MPI_Wait(&request, &status);
                 }
                 row_receiver++;
             }
             row_procs_sender += squaredP;
-        }
-        for (int j = 0; j <= (squaredP - 1); j++)
-        {
             // broadcast submatrix B to processors in the same column
             for (int l = 0; l <= (squaredP - 1); l++)
             {
@@ -221,18 +219,18 @@ int main(int argc, char **argv)
                 {
                     if (column_procs_sender != col_receiver)
                     {
-                        MPI_Isend(&(row_message[0][0]), row2_local * column2_local, MPI_INT, col_receiver, 0, MPI_COMM_WORLD,&request);
-                        MPI_Wait(&request,&status);
+                        MPI_Isend(&(row_message[0][0]), row2_local * column2_local, MPI_INT, col_receiver, 0, MPI_COMM_WORLD, &request);
+                        MPI_Wait(&request, &status);
                     }
-                    else //receive my own message
+                    else // receive my own message
                     {
                         row_receive = row_message;
                     }
                 }
-                else if (my_rank == col_receiver )
+                else if (my_rank == col_receiver)
                 {
-                    MPI_Irecv(&(row_receive[0][0]), row2_local * column2_local, MPI_INT, column_procs_sender, 0, MPI_COMM_WORLD,&request);
-                    MPI_Wait(&request,&status);                    
+                    MPI_Irecv(&(row_receive[0][0]), row2_local * column2_local, MPI_INT, column_procs_sender, 0, MPI_COMM_WORLD, &request);
+                    MPI_Wait(&request, &status);
                 }
                 col_receiver += squaredP;
             }
@@ -258,7 +256,7 @@ int main(int argc, char **argv)
     // Merge submatrix C' to C
     MPI_Gatherv(&(localC[0][0]), row3_local * column3_local, MPI_INT,
                 Cptr, sendcounts, displs, subarrtype, 0, MPI_COMM_WORLD);
-    
+
     end = MPI_Wtime();
 
     // Write ouput to file
@@ -295,4 +293,3 @@ int main(int argc, char **argv)
     MPI_Finalize();
     return 0;
 }
-

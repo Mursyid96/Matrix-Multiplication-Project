@@ -1,4 +1,4 @@
-make --dry-run --keep-going --print-directory
+make --dry-run --always-make --keep-going --print-directory
 make: Entering directory '/home/444/mi5244/COMP4300/student-comp4300-2022-project'
 make: Leaving directory '/home/444/mi5244/COMP4300/student-comp4300-2022-project'
  
