@@ -52,7 +52,7 @@ int main(int argc, char **argv)
     // set the number of blocks and threads
     int block = 2; 
     omp_set_num_threads(np);
-
+ 
     double start = omp_get_wtime();
 
 // blocked matrix multiplication
