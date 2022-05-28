@@ -53,6 +53,7 @@ int main(int argc, char **argv)
     FILE *iptr;
     FILE *optr;
 
+    // rank 0 reads inputs from file
     if (my_rank == 0)
     {
         if ((iptr = fopen(argv[1], "r")) == NULL)
@@ -83,11 +84,13 @@ int main(int argc, char **argv)
         }
         malloc2dint(&C, column2, row1);
     }
+    // broadcast matrix dimension to all processors
     MPI_Bcast(&column1, 1, MPI_INT, 0, MPI_COMM_WORLD);
     MPI_Bcast(&row1, 1, MPI_INT, 0, MPI_COMM_WORLD);
     MPI_Bcast(&column2, 1, MPI_INT, 0, MPI_COMM_WORLD);
     MPI_Bcast(&row2, 1, MPI_INT, 0, MPI_COMM_WORLD);
 
+    // calculate submatrixes dimension
     int column1_local = column1 / squaredP;
     int row1_local = row1 / squaredP;
     int column2_local = column2 / squaredP;
@@ -95,11 +98,13 @@ int main(int argc, char **argv)
     int row3 = row1;
     int column3 = column2;
 
-    // subarrays
+    // subamatrices
     int **localA, **localB;
     int **col_message, **row_message, **col_receive, **row_receive, **localC;
     int row3_local = row1_local;
     int column3_local = column2_local;
+    
+    // allocate submatrices
     malloc2dint(&localA, column1_local, row1_local);
     malloc2dint(&localB, column2_local, row2_local);
     malloc2dint(&localC, column3_local, row3_local);
@@ -108,6 +113,7 @@ int main(int argc, char **argv)
     malloc2dint(&col_receive, column1_local, row1_local);
     malloc2dint(&row_receive, column2_local, row2_local);
 
+    // create new datatype for submatrices
     int sizesA[2] = {row1, column1};
     int subsizesA[2] = {row1_local, column1_local};
     int startsA[2] = {0, 0};
@@ -129,6 +135,7 @@ int main(int argc, char **argv)
     int sendcounts[comm_size];
     int displs[comm_size];
 
+    // calculate each processor pointer in the original matrix
     if (my_rank == 0)
     {
         for (int i = 0; i < comm_size; i++)
@@ -185,6 +192,8 @@ int main(int argc, char **argv)
     int max = min + (squaredP - 1);
     bool sent = false;
     bool receive = false;
+
+
     for (int i = 0; i < squaredP; i++)
     {
         for (int j = 0; j < squaredP; j++)
@@ -201,7 +210,8 @@ int main(int argc, char **argv)
             {
                 if (my_rank != row_original)
                 {
-                    MPI_Send(&(localA[0][0]), row1_local * column1_local, MPI_INT, row_original, 0, MPI_COMM_WORLD);
+                    MPI_Isend(&(localA[0][0]), row1_local * column1_local, MPI_INT, row_original, 0, MPI_COMM_WORLD,&request);
+                    MPI_Wait(&request,&status);
                     sent = true;
                 }
                 else
@@ -220,7 +230,8 @@ int main(int argc, char **argv)
             {
                 if (my_rank != row_shifted)
                 {
-                    MPI_Recv(&(col_receive[0][0]), row1_local * column1_local, MPI_INT, row_shifted, 0, MPI_COMM_WORLD, &status);
+                    MPI_Irecv(&(col_receive[0][0]), row1_local * column1_local, MPI_INT, row_shifted, 0, MPI_COMM_WORLD, &request);
+                    MPI_Wait(&request,&status);
                     receive = true;
                 }
             }
@@ -461,6 +472,7 @@ int main(int argc, char **argv)
 
     end = MPI_Wtime();
 
+    // rank 0 writes the outputs to output file
     if (my_rank == 0)
     {
         optr = fopen(argv[2], "w");

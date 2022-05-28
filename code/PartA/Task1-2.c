@@ -26,42 +26,47 @@ int main(int argc, char **argv)
         exit(1);
     }
 
+    // reads matrix A
     fscanf(iptr, "%d", &row1);
     fscanf(iptr, "%d", &column1);
     int *A = malloc(column1 * row1 * sizeof(int));
-
     for (int i = 0; i < row1 * column1; i++)
     {
         fscanf(iptr, "%d", &A[i]);
     }
 
+    // reads matrix B
     fscanf(iptr, "%d", &row2);
     fscanf(iptr, "%d", &column2);
     int *B = malloc(column2 * row2 * sizeof(int));
-
     for (int i = 0; i < row2 * column2; i++)
     {
         fscanf(iptr, "%d", &B[i]);
     }
 
+    // initiliases matrix C
     int row3 = row1;
     int column3 = column2;
     int *C = malloc(column3 * row3 * sizeof(int));
 
-    int block = 2;
-    double start = omp_get_wtime();
-
+    // set number of blocks and threads
+    int block = 16;
     omp_set_num_threads(np);
 
+    double start = omp_get_wtime();
+
+// blocked matrix multiplication
 #pragma omp parallel
 {
     #pragma omp for schedule(dynamic) nowait
+    // traverse by blocks
     for (int ii = 1; ii <= row3 / block; ii++)
     {
         for (int kk = 1; kk <= column3 / block; kk++)
         {
             for (int jj = 1; jj <= column1 / block; jj++)
             {
+                // traverse by element
                 for (int i = (ii - 1) * block; i < (ii * block); i++)
                 {
                     for (int k = (kk - 1) * block; k < (kk * block); k++)
@@ -77,18 +82,6 @@ int main(int argc, char **argv)
         }
     }
 }
-    
-
-   /* for (int i = 0; i < row3; i++)
-    {
-        for (int k = 0; k < column3; k++)
-        {
-            for (int j = 0; j < column1; j++)
-            {
-                C[i * column3 + j] += A[i * column1 + k] * B[k * column2 + j];
-            }
-        }
-    }*/
 
     double end = omp_get_wtime();
 
@@ -100,6 +93,7 @@ int main(int argc, char **argv)
         exit(1);
     }
 
+    // writes output to output file
     for (int i = 0; i < row3; i++)
     {
         for (int j = 0; j < column3; j++)
@@ -109,7 +103,9 @@ int main(int argc, char **argv)
         fprintf(optr, "\n");
     }
 
+    // prints running time
     fprintf(optr, "Running time: %es\n", end - start);
+    printf("Running time: %es\n", end - start);
 
     free(A);
     free(B);

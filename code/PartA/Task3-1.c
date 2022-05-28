@@ -52,6 +52,7 @@ int main(int argc, char **argv)
     FILE *iptr;
     FILE *optr;
 
+    // rank 0 reads inputs from file
     if (my_rank == 0)
     {
         if ((iptr = fopen(argv[1], "r")) == NULL)
@@ -82,11 +83,13 @@ int main(int argc, char **argv)
         }
         malloc2dint(&C, column2, row1);
     }
+    // broadcast matrix dimension to all processors
     MPI_Bcast(&column1, 1, MPI_INT, 0, MPI_COMM_WORLD);
     MPI_Bcast(&row1, 1, MPI_INT, 0, MPI_COMM_WORLD);
     MPI_Bcast(&column2, 1, MPI_INT, 0, MPI_COMM_WORLD);
     MPI_Bcast(&row2, 1, MPI_INT, 0, MPI_COMM_WORLD);
 
+    // calculate submatrixes dimension
     int column1_local = column1 / squaredP;
     int row1_local = row1 / squaredP;
     int column2_local = column2 / squaredP;
@@ -94,11 +97,13 @@ int main(int argc, char **argv)
     int row3 = row1;
     int column3 = column2;
 
-    // subarrays
+    // submatrices
     int **localA, **localB;
     int **col_message, **row_message, **col_receive, **row_receive, **localC;
     int row3_local = row1_local;
     int column3_local = column2_local;
+    
+    // allocate submatrices
     malloc2dint(&localA, column1_local, row1_local);
     malloc2dint(&localB, column2_local, row2_local);
     malloc2dint(&localC, column3_local, row3_local);
@@ -107,6 +112,7 @@ int main(int argc, char **argv)
     malloc2dint(&col_receive, column1_local, row1_local);
     malloc2dint(&row_receive, column2_local, row2_local);
 
+    // create new datatype for submatrices
     int sizesA[2] = {row1, column1};
     int subsizesA[2] = {row1_local, column1_local};
     int startsA[2] = {0, 0};
@@ -128,13 +134,14 @@ int main(int argc, char **argv)
     int sendcounts[comm_size];
     int displs[comm_size];
 
+    // calculate each processor pointer in original matrix
     if (my_rank == 0)
     {
+        int disp = 0;
         for (int i = 0; i < comm_size; i++)
         {
             sendcounts[i] = 1;
         }
-        int disp = 0;
         for (int i = 0; i < squaredP; i++)
         {
             for (int j = 0; j < squaredP; j++)
@@ -184,10 +191,13 @@ int main(int argc, char **argv)
     int max = min + (squaredP - 1);
     bool sent = false;
     bool receive = false;
+
+    // left circular shift ith row of A by i
     for (int i = 0; i < squaredP; i++)
     {
         for (int j = 0; j < squaredP; j++)
         {
+            // calculate sender and receiver rank
             if (row_original + offset > max)
             {
                 row_shifted = (row_original + (offset)) - squaredP;
@@ -196,8 +206,10 @@ int main(int argc, char **argv)
             {
                 row_shifted = (row_original + offset);
             }
+            // if i have to shift, send to receiver
             if (my_rank == row_shifted)
             {
+                // dont allow same rank comm
                 if (my_rank != row_original)
                 {
                     MPI_Send(&(localA[0][0]), row1_local * column1_local, MPI_INT, row_original, 0, MPI_COMM_WORLD);
@@ -205,6 +217,7 @@ int main(int argc, char **argv)
                 }
                 else
                 {
+                    // receive my own message
                     for (int g = 0; g < row1_local; g++)
                     {
                         for (int f = 0; f < column1_local; f++)
@@ -215,6 +228,7 @@ int main(int argc, char **argv)
                     sent = true;
                 }
             }
+            // if my rank equal to sender's original row, receive
             else if (my_rank == row_original)
             {
                 if (my_rank != row_shifted)
@@ -225,6 +239,7 @@ int main(int argc, char **argv)
             }
             row_original++;
         }
+        // change my local submatrix after comm is done
         if (sent && receive)
         {
             for (int g = 0; g < row1_local; g++)
@@ -242,6 +257,7 @@ int main(int argc, char **argv)
         max = min + (squaredP - 1);
     }
 
+    // reset variable used for up-circular-shift
     offset = 0;
     int col_original = 0;
     int col_shifted;
@@ -249,10 +265,13 @@ int main(int argc, char **argv)
     max = min + (squaredP * (squaredP - 1));
     sent = false;
     receive = false;
+
+    // up-circular-shift ith row of A by i
     for (int i = 0; i < squaredP; i++)
     {
         for (int j = 0; j < squaredP; j++)
         {
+            // calculate sender and receiver rank
             if (col_original + (offset * squaredP) > max)
             {
                 col_shifted = (col_original + (offset * squaredP)) - comm_size;
@@ -261,8 +280,10 @@ int main(int argc, char **argv)
             {
                 col_shifted = (col_original + (offset * squaredP));
             }
+            // if i have to shift, send to receiver
             if (my_rank == col_shifted)
             {
+                // dont allow same rank comm
                 if (my_rank != col_original)
                 {
                     // printf("receiver: %d sender: %d\n",col_original, col_shifted);
@@ -271,6 +292,7 @@ int main(int argc, char **argv)
                 }
                 else
                 {
+                    // accept my own message
                     for (int g = 0; g < row2_local; g++)
                     {
                         for (int f = 0; f < column2_local; f++)
@@ -281,6 +303,7 @@ int main(int argc, char **argv)
                     sent = true;
                 }
             }
+            // if my rank is equal to sender's original column, receive
             else if (my_rank == col_original)
             {
                 if (my_rank != col_shifted)
@@ -292,6 +315,7 @@ int main(int argc, char **argv)
             }
             col_original += squaredP;
         }
+        // change my local submatrix after comm is odne
         if (sent && receive)
         {
             for (int g = 0; g < row2_local; g++)
@@ -313,6 +337,7 @@ int main(int argc, char **argv)
     offset = 1;
     for (int q = 0; q < squaredP; q++)
     {
+        // calculate local C
         for (int i = 0; i < row3_local; i++)
         {
             for (int k = 0; k < column3_local; k++)
@@ -324,6 +349,7 @@ int main(int argc, char **argv)
             }
         }
 
+        // left-circular shift by 1
         row_original = 0;
         min = 0;
         max = min + (squaredP - 1);
@@ -333,6 +359,7 @@ int main(int argc, char **argv)
         {
             for (int j = 0; j < squaredP; j++)
             {
+                // calculate sender and receiver rank
                 if (row_original + offset > max)
                 {
                     row_shifted = (row_original + (offset)) - squaredP;
@@ -341,8 +368,10 @@ int main(int argc, char **argv)
                 {
                     row_shifted = (row_original + offset);
                 }
+                // if i have to shift, send to receiver
                 if (my_rank == row_shifted)
                 {
+                    // dont allow same rank comm
                     if (my_rank != row_original)
                     {
                         MPI_Send(&(localA[0][0]), row1_local * column1_local, MPI_INT, row_original, 0, MPI_COMM_WORLD);
@@ -350,6 +379,7 @@ int main(int argc, char **argv)
                     }
                     else
                     {
+                        // accept my own message
                         for (int g = 0; g < row1_local; g++)
                         {
                             for (int f = 0; f < column1_local; f++)
@@ -360,6 +390,7 @@ int main(int argc, char **argv)
                         sent = true;
                     }
                 }
+                // if my rank is equal to sender's original row, receive 
                 else if (my_rank == row_original)
                 {
                     if (my_rank != row_shifted)
@@ -370,6 +401,7 @@ int main(int argc, char **argv)
                 }
                 row_original++;
             }
+            // change my local submatrix after comm is done
             if (sent && receive)
             {
                 for (int g = 0; g < row1_local; g++)
@@ -386,6 +418,7 @@ int main(int argc, char **argv)
             max = min + (squaredP - 1);
         }
 
+        // up-circular shift by 1
         col_original = 0;
         min = 0;
         max = min + (squaredP * (squaredP - 1));
@@ -395,6 +428,7 @@ int main(int argc, char **argv)
         {
             for (int j = 0; j < squaredP; j++)
             {
+                // calculate sender and receiver rank
                 if (col_original + (offset * squaredP) > max)
                 {
                     col_shifted = (col_original + (offset * squaredP)) - comm_size;
@@ -403,8 +437,10 @@ int main(int argc, char **argv)
                 {
                     col_shifted = (col_original + (offset * squaredP));
                 }
+                // if i have to shift, send to receiver
                 if (my_rank == col_shifted)
                 {
+                    // dont allow same rank comm
                     if (my_rank != col_original)
                     {
                         // printf("receiver: %d sender: %d\n",col_original, col_shifted);
@@ -413,6 +449,7 @@ int main(int argc, char **argv)
                     }
                     else
                     {
+                        //accept my own message
                         for (int g = 0; g < row2_local; g++)
                         {
                             for (int f = 0; f < column2_local; f++)
@@ -423,6 +460,7 @@ int main(int argc, char **argv)
                         sent = true;
                     }
                 }
+                // if my rank is equal to sender's original column, receive 
                 else if (my_rank == col_original)
                 {
                     if (my_rank != col_shifted)
@@ -434,6 +472,7 @@ int main(int argc, char **argv)
                 }
                 col_original += squaredP;
             }
+            // Change my local submatrix after comm is done
             if (sent && receive)
             {
                 for (int g = 0; g < row2_local; g++)
@@ -458,6 +497,7 @@ int main(int argc, char **argv)
 
     end = MPI_Wtime();
 
+    // rank 0 write the outputs to output file
     if (my_rank == 0)
     {
         optr = fopen(argv[2], "w");

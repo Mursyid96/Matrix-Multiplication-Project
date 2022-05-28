@@ -216,18 +216,19 @@ int main(int argc, char **argv)
     int column3 = column2;
     N = row1;
 
-    // Spawn thread
+    // Spawn threads
     GET_TIME(start);
     for (long i = 0; i < nthrd; i++)
     {
         pthread_create(&threads[i], NULL, mat_mul, (void *)i);
     }
-
+    // reap threads
     for (int i = 0; i < nthrd; i++)
     {
         pthread_join(threads[i], NULL);
     }
     GET_TIME(finish);
+    
     elapsed = finish - start;
 
     optr = fopen(argv[3], "w");

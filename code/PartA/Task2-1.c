@@ -50,6 +50,7 @@ int main(int argc, char **argv)
     FILE *iptr;
     FILE *optr;
 
+    // rank 0 reads inputs from file
     if (my_rank == 0)
     {
         if ((iptr = fopen(argv[1], "r")) == NULL)
@@ -80,24 +81,27 @@ int main(int argc, char **argv)
         }
         malloc2dint(&C, column2, row1);
     }
+    // broadcast matrix dimension to all processors
     MPI_Bcast(&column1, 1, MPI_INT, 0, MPI_COMM_WORLD);
     MPI_Bcast(&row1, 1, MPI_INT, 0, MPI_COMM_WORLD);
     MPI_Bcast(&column2, 1, MPI_INT, 0, MPI_COMM_WORLD);
     MPI_Bcast(&row2, 1, MPI_INT, 0, MPI_COMM_WORLD);
 
-    int block = 1;
-    int column1_local = (column1 / block) / squaredP;
-    int row1_local = (row1 / block) / squaredP;
-    int column2_local = (column2 / block) / squaredP;
-    int row2_local = (row2 / block) / squaredP;
+    // calculate submatrixes dimension
+    int column1_local = column1 / squaredP;
+    int row1_local = row1 / squaredP;
+    int column2_local = column2 / squaredP;
+    int row2_local = row2 / squaredP;
     int row3 = row1;
     int column3 = column2;
 
-    // subarrays init
+    // submatrices
     int **localA, **localB;
     int **col_message, **row_message, **col_receive, **row_receive, **localC;
     int row3_local = row1_local;
     int column3_local = column2_local;
+    
+    // allocate submatrices
     malloc2dint(&localA, column1_local, row1_local);
     malloc2dint(&localB, column2_local, row2_local);
     malloc2dint(&localC, column3_local, row3_local);
@@ -106,7 +110,7 @@ int main(int argc, char **argv)
     malloc2dint(&col_receive, column1_local, row1_local);
     malloc2dint(&row_receive, column2_local, row2_local);
 
-    // create new datatype for subarrays
+    // create new datatype for submatrices
     int sizesA[2] = {row1, column1};
     int subsizesA[2] = {row1_local, column1_local};
     int startsA[2] = {0, 0};
@@ -128,13 +132,14 @@ int main(int argc, char **argv)
     int sendcounts[comm_size];
     int displs[comm_size];
 
+    // calculate each processor pointer in original matrix
     if (my_rank == 0)
     {
+        int disp = 0;
         for (int i = 0; i < comm_size; i++)
         {
             sendcounts[i] = 1;
         }
-        int disp = 0;
         for (int i = 0; i < squaredP; i++)
         {
             for (int j = 0; j < squaredP; j++)
@@ -175,34 +180,8 @@ int main(int argc, char **argv)
     start = MPI_Wtime();
     MPI_Scatterv(Aptr, sendcounts, displs, subarrtype, &(localA[0][0]), (row1_local) * (column1_local), MPI_INT, 0, MPI_COMM_WORLD);
     MPI_Scatterv(Bptr, sendcounts, displs, subarrtype, &(localB[0][0]), (row2_local) * (column2_local), MPI_INT, 0, MPI_COMM_WORLD);
-
     col_message = localA;
     row_message = localB;
-
-    /*for (int p=0; p<comm_size; p++) {
-        if (my_rank == p) {
-            printf("Local process on rank %d is:\n", my_rank);
-            for (int i=0; i<column1/squaredP; i++) {
-                putchar('|');
-                for (int j=0; j<column1/squaredP; j++) {
-                    printf("%2d ", col_message[i][j]);
-                }
-                printf("|\n");
-            }
-        }
-    }
-    for (int p=0; p<comm_size; p++) {
-        if (my_rank == p) {
-            printf("Local process on rank %d is:\n", my_rank);
-            for (int i=0; i<column1/squaredP; i++) {
-                putchar('|');
-                for (int j=0; j<column1/squaredP; j++) {
-                    printf("%2d ", row_message[i][j]);
-                }
-                printf("|\n");
-            }
-        }
-    }*/
 
     // SUMMA
     int column_procs_sender = 0;
@@ -212,30 +191,23 @@ int main(int argc, char **argv)
     for (int k = 0; k <= (squaredP - 1); k++)
     {
         row_procs_sender = k;
-        // if (my_rank == 0)
-        //{printf("k:%d \n",k);}
         for (int i = 0; i <= (squaredP - 1); i++)
         {
-            // if (my_rank == 0)
-            //{printf("row sender:%d \n",row_procs_sender);}
-            //  broadcast submatrix A to processors in the same row
+            // broadcast submatrix A to processors in the same row
             for (int j = 0; j <= (squaredP - 1); j++)
             {
-                // printf("sender:%d \n",row_procs_sender);
-                // printf("receiver:%d \n",row_receiver);
-                if (my_rank == row_procs_sender) //&& my_rank != row_receiver)
+                if (my_rank == row_procs_sender)
                 {
                     if (row_procs_sender != row_receiver)
                     {
                         MPI_Send(&(col_message[0][0]), row1_local * column1_local, MPI_INT, row_receiver, 0, MPI_COMM_WORLD);
-                        // printf("%d sent to %d for A\n", row_procs_sender, row_receiver);
                     }
                     else // receive my own message
                     {
                         col_receive = col_message;
                     }
                 }
-                else if (my_rank == row_receiver) //&& my_rank != row_procs_sender)
+                else if (my_rank == row_receiver)
                 {
                     if (row_procs_sender != row_receiver)
                     {
@@ -243,15 +215,7 @@ int main(int argc, char **argv)
                     }
                 }
                 row_receiver++;
-            }
-            row_procs_sender += squaredP;
-            // if (my_rank == 0)
-            //{printf("column sender %d\n",column_procs_sender);}
-            //  broadcast submatrix B to processors in the same column
-            for (int l = 0; l <= (squaredP - 1); l++)
-            {
-                // if (my_rank == 0)
-                //{printf("column receiver %d\n",col_receiver);}
+                //  broadcast submatrix B to processors in the same column
                 if (my_rank == column_procs_sender)
                 {
                     if (column_procs_sender != col_receiver)
@@ -273,9 +237,9 @@ int main(int argc, char **argv)
                 }
                 col_receiver += squaredP;
             }
+            row_procs_sender += squaredP;
             column_procs_sender++;
             col_receiver = (col_receiver + 1) % squaredP;
-            // printf("%d/n",col_receiver);
         }
         // calculate local submatrix C'
         for (int i = 0; i < row3_local; i++)
@@ -345,70 +309,3 @@ int main(int argc, char **argv)
     MPI_Finalize();
     return 0;
 }
-
-/*for (int i = 0; i < row3 * column3; i++)
-{
-    C[i] = 0;
-}
-
-for (int i = 0; i < row3; i++)
-{
-    for (int k = 0; k < column3; k++)
-    {
-        for (int j = 0; j < column1; j++)
-        {
-            C[i * column3 + j] += A[i * column1 + k] * B[k * column2 + j];
-        }
-    }
-}*/
-
-// printf("%d,%d,%d,%d\n",column1,row1,column2,row2);
-
-/*for (int p=0; p<comm_size; p++) {
-    if (my_rank == p) {
-        printf("Local process on rank %d is:\n", my_rank);
-        for (int i=0; i<column1/squaredP; i++) {
-            putchar('|');
-            for (int j=0; j<column1/squaredP; j++) {
-                printf("%2d ", localA[i][j]);
-            }
-            printf("|\n");
-        }
-    }
-}
-for (int p=0; p<comm_size; p++) {
-    if (my_rank == p) {
-        printf("Local process on rank %d is:\n", my_rank);
-        for (int i=0; i<column1/squaredP; i++) {
-            putchar('|');
-            for (int j=0; j<column1/squaredP; j++) {
-                printf("%2d ", localB[i][j]);
-            }
-            printf("|\n");
-        }
-    }
-}*/
-
-/*int row3 = row1;
-int column3 = column2;
-int *C = malloc(column3 * row3 * sizeof(int));*/
-
-/*if (my_rank == 0)
-{
-    optr = fopen(argv[2], "w");
-
-    if (optr == NULL)
-    {
-        printf("Error!");
-        exit(1);
-    }
-    for (int i = 0; i < row3; i++)
-    {
-        for (int j = 0; j < column3; j++)
-        {
-            fprintf(optr, "%d\t", C[i * column3 + j]);
-        }
-        fprintf(optr, "\n");
-    }
-}*/
-// fprintf(optr, "Running time: %es\n", end - start);
