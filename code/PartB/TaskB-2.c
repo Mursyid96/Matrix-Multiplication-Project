@@ -180,14 +180,22 @@ int main(int argc, char **argv)
     double start, end;
     MPI_Barrier(MPI_COMM_WORLD);
     start = MPI_Wtime();
-    MPI_Scatterv(Aptr, sendcounts, displs, subarrtype, &(localA[0][0]), (row1_local) * (column1_local), MPI_INT, 0, MPI_COMM_WORLD);
-    MPI_Scatterv(Bptr, sendcounts, displs, subarrtype, &(localB[0][0]), (row2_local) * (column2_local), MPI_INT, 0, MPI_COMM_WORLD);
+    #pragma omp parallel
+    {
+        #pragma omp single
+        {
+            #pragma omp task
+            MPI_Scatterv(Aptr, sendcounts, displs, subarrtype, &(localA[0][0]), (row1_local) * (column1_local), MPI_INT, 0, MPI_COMM_WORLD);
+            #pragma omp task
+            MPI_Scatterv(Bptr, sendcounts, displs, subarrtype, &(localB[0][0]), (row2_local) * (column2_local), MPI_INT, 0, MPI_COMM_WORLD);
+        }
+    }
 
     col_message = localA;
     row_message = localB;
 
     // set blocksize and num threads for omp
-    int block = 16;
+    int block = 2;
     omp_set_num_threads(comm_size);
 
     // SUMMA
@@ -251,7 +259,7 @@ int main(int argc, char **argv)
         // blocked matrix multiplication
         #pragma omp parallel
         {
-            #pragma omp for schedule(dynamic) nowait
+            #pragma omp for schedule(dynamic) 
             // traverse by blocks
             for (int ii = 1; ii <= row3_local / block; ii++)
             {
