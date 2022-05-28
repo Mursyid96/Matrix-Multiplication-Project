@@ -1,0 +1,21 @@
+/local/spool/pbs/mom_priv/jobs/41392946.gadi-pbs.SC: line 11: 2274800 Segmentation fault      ./Task4A-1 4 ../testcases/input_testcase_25 ../testcases/output
+Running time: 8.361816e-03s
+Running time: 1.250720e-01s
+Running time: 3.943135e+00s
+/local/spool/pbs/mom_priv/jobs/41392946.gadi-pbs.SC: line 15: 2274829 Segmentation fault      ./Task4A-2 4 ../testcases/input_testcase_25 ../testcases/output
+Running time: 8.260012e-03s
+Running time: 1.339669e-01s
+Running time: 5.396714e+00s
+
+======================================================================================
+                  Resource Usage on 2022-05-26 20:14:36:
+   Job Id:             41392946.gadi-pbs
+   Project:            c37
+   Exit Status:        0
+   Service Units:      0.03
+   NCPUs Requested:    4                      NCPUs Used: 4               
+                                           CPU Time Used: 00:00:33                                   
+   Memory Requested:   10.0GB                Memory Used: 86.07MB         
+   Walltime requested: 00:01:00            Walltime Used: 00:00:12        
+   JobFS requested:    100.0MB                JobFS used: 0B              
+======================================================================================

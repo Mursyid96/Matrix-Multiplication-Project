@@ -1,0 +1,21 @@
+Running time: 3.724208e+00s
+Running time: 9.787931e-01s
+Running time: 2.652979e-01s
+Running time: 3.198400e-01s
+Running time: 3.794835e+00s
+Running time: 9.950788e-01s
+Running time: 3.439629e-01s
+Running time: 3.321760e-01s
+
+======================================================================================
+                  Resource Usage on 2022-05-26 21:31:18:
+   Job Id:             41399218.gadi-pbs
+   Project:            c37
+   Exit Status:        0
+   Service Units:      0.12
+   NCPUs Requested:    16                     NCPUs Used: 16              
+                                           CPU Time Used: 00:00:34                                   
+   Memory Requested:   1.0GB                 Memory Used: 37.83MB         
+   Walltime requested: 00:01:00            Walltime Used: 00:00:13        
+   JobFS requested:    100.0MB                JobFS used: 0B              
+======================================================================================

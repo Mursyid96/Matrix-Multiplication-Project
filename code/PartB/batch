@@ -1,0 +1,18 @@
+#!/bin/bash
+#PBS -P c37
+#PBS -q normal
+#PBS -j oe
+#PBS -l walltime=00:01:00,mem=50GB
+#PBS -l wd
+#PBS -l ncpus=96
+#
+
+module load openmpi/4.0.1
+mpirun -n 64 ./TaskB-1  ../testcases/input_testcase_24 ../testcases_output
+mpirun -n 64 ./TaskB-1  ../testcases/input_testcase_96 ../testcases_output
+mpirun -n 64 ./TaskB-1  ../testcases/input_testcase_384 ../testcases_output
+mpirun -n 64 ./TaskB-1  ../testcases/input_testcase_1536 ../testcases_output
+mpirun -n 64 ./TaskB-2  ../testcases/input_testcase_24 ../testcases_output
+mpirun -n 64 ./TaskB-2  ../testcases/input_testcase_96 ../testcases_output
+mpirun -n 64 ./TaskB-2  ../testcases/input_testcase_384 ../testcases_output
+mpirun -n 64 ./TaskB-2  ../testcases/input_testcase_1536 ../testcases_output

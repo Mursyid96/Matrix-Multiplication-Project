@@ -1,0 +1,185 @@
+
+------------------------------------------------------------------------
+Job 41373382 has exceeded memory allocation on node gadi-cpu-clx-1007.gadi.nci.org.au
+Process "bash", pid 3495411, rss 3411968, vmem 21667840
+Process "pbs_demux", pid 3495421, rss 995328, vmem 11079680
+Process "41373382.gadi-p", pid 3495470, rss 2924544, vmem 10170368
+Process "mpirun", pid 3495483, rss 9592832, vmem 739438592
+Process "Task3-1", pid 3495500, rss 85725184, vmem 638976000
+Process "Task3-1", pid 3495501, rss 87953408, vmem 638976000
+Process "Task3-1", pid 3495502, rss 85901312, vmem 638980096
+Process "Task3-1", pid 3495503, rss 131248128, vmem 646737920
+Process "Task3-1", pid 3495504, rss 131088384, vmem 646737920
+Process "Task3-1", pid 3495505, rss 100462592, vmem 638971904
+Process "Task3-1", pid 3495506, rss 131358720, vmem 646737920
+Process "Task3-1", pid 3495507, rss 131260416, vmem 646742016
+Process "Task3-1", pid 3495508, rss 130437120, vmem 646737920
+Process "Task3-1", pid 3495509, rss 130998272, vmem 646746112
+Process "Task3-1", pid 3495510, rss 129138688, vmem 646742016
+Process "Task3-1", pid 3495513, rss 131190784, vmem 646746112
+Process "Task3-1", pid 3495514, rss 117338112, vmem 638976000
+Process "Task3-1", pid 3495515, rss 129146880, vmem 646746112
+Process "Task3-1", pid 3495518, rss 87982080, vmem 638976000
+Process "Task3-1", pid 3495519, rss 129687552, vmem 646737920
+Process "Task3-1", pid 3495521, rss 129675264, vmem 646742016
+Process "Task3-1", pid 3495523, rss 130973696, vmem 646742016
+Process "Task3-1", pid 3495524, rss 111026176, vmem 638988288
+Process "Task3-1", pid 3495526, rss 130732032, vmem 646737920
+Process "Task3-1", pid 3495529, rss 129142784, vmem 642449408
+Process "Task3-1", pid 3495531, rss 128868352, vmem 642433024
+Process "Task3-1", pid 3495534, rss 129921024, vmem 646737920
+Process "Task3-1", pid 3495539, rss 85852160, vmem 638980096
+Process "Task3-1", pid 3495543, rss 85819392, vmem 638976000
+Process "Task3-1", pid 3495544, rss 131289088, vmem 646742016
+Process "Task3-1", pid 3495551, rss 129662976, vmem 646746112
+Process "Task3-1", pid 3495552, rss 85807104, vmem 638988288
+Process "Task3-1", pid 3495554, rss 131444736, vmem 646750208
+Process "Task3-1", pid 3495557, rss 129413120, vmem 646737920
+Process "Task3-1", pid 3495559, rss 131289088, vmem 646750208
+Process "Task3-1", pid 3495562, rss 131215360, vmem 646746112
+Process "Task3-1", pid 3495563, rss 85794816, vmem 638976000
+Process "Task3-1", pid 3495566, rss 119410688, vmem 638980096
+Process "Task3-1", pid 3495569, rss 90062848, vmem 638976000
+Process "Task3-1", pid 3495570, rss 85884928, vmem 638976000
+Process "Task3-1", pid 3495575, rss 85794816, vmem 638984192
+Process "Task3-1", pid 3495577, rss 129581056, vmem 646737920
+Process "Task3-1", pid 3495578, rss 85807104, vmem 638980096
+Process "Task3-1", pid 3495582, rss 85823488, vmem 638976000
+Process "Task3-1", pid 3495587, rss 127815680, vmem 641429504
+Process "Task3-1", pid 3495591, rss 85827584, vmem 638988288
+Process "Task3-1", pid 3495595, rss 85794816, vmem 638980096
+Process "Task3-1", pid 3495611, rss 85893120, vmem 638980096
+Process "Task3-1", pid 3495615, rss 131022848, vmem 646742016
+Process "Task3-1", pid 3495619, rss 129437696, vmem 646750208
+Process "Task3-1", pid 3495624, rss 129888256, vmem 646737920
+Process "Task3-1", pid 3495654, rss 129122304, vmem 646742016
+------------------------------------------------------------------------
+For more information visit https://opus.nci.org.au/x/SwGRAQ
+------------------------------------------------------------------------
+[1653550874.124130] [gadi-cpu-clx-1007:3495500:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14d7ffa00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653550874.124605] [gadi-cpu-clx-1007:3495500:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653550874.124143] [gadi-cpu-clx-1007:3495501:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x154df3000000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653550874.124624] [gadi-cpu-clx-1007:3495501:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653550874.124139] [gadi-cpu-clx-1007:3495513:0]            sock.c:52   UCX  ERROR socket create failed: Too many open files in system
+[1653550874.124124] [gadi-cpu-clx-1007:3495518:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14b29a400000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653550874.124604] [gadi-cpu-clx-1007:3495518:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653550874.124113] [gadi-cpu-clx-1007:3495523:0]            sock.c:52   UCX  ERROR socket create failed: Cannot allocate memory
+[1653550874.124135] [gadi-cpu-clx-1007:3495543:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x1495dfa00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653550874.124596] [gadi-cpu-clx-1007:3495543:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653550874.124136] [gadi-cpu-clx-1007:3495552:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14c09a400000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653550874.124608] [gadi-cpu-clx-1007:3495552:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653550874.124152] [gadi-cpu-clx-1007:3495569:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x15213b800000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653550874.124623] [gadi-cpu-clx-1007:3495569:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653550874.124189] [gadi-cpu-clx-1007:3495575:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x147c92c00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653550874.124619] [gadi-cpu-clx-1007:3495575:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653550874.124213] [gadi-cpu-clx-1007:3495595:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x1498cc400000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653550874.124646] [gadi-cpu-clx-1007:3495595:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653550874.124160] [gadi-cpu-clx-1007:3495570:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x153f1e000000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653550874.124606] [gadi-cpu-clx-1007:3495570:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653550874.124127] [gadi-cpu-clx-1007:3495578:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14f0b2c00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653550874.124596] [gadi-cpu-clx-1007:3495578:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653550874.124195] [gadi-cpu-clx-1007:3495582:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x154570000000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653550874.124627] [gadi-cpu-clx-1007:3495582:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653550874.124202] [gadi-cpu-clx-1007:3495591:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x150cc9c00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653550874.124635] [gadi-cpu-clx-1007:3495591:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653550874.124209] [gadi-cpu-clx-1007:3495611:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x15130cc00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653550874.124622] [gadi-cpu-clx-1007:3495611:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653550874.124143] [gadi-cpu-clx-1007:3495615:0]            sock.c:52   UCX  ERROR socket create failed: Too many open files in system
+[1653550874.124188] [gadi-cpu-clx-1007:3495502:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14aa6c600000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653550874.124634] [gadi-cpu-clx-1007:3495502:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653550874.124182] [gadi-cpu-clx-1007:3495504:0]            sock.c:52   UCX  ERROR socket create failed: Cannot allocate memory
+[1653550874.124200] [gadi-cpu-clx-1007:3495505:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x148f29400000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653550874.124702] [gadi-cpu-clx-1007:3495505:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653550874.124216] [gadi-cpu-clx-1007:3495514:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x150948600000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653550874.124778] [gadi-cpu-clx-1007:3495514:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653550874.124223] [gadi-cpu-clx-1007:3495524:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x154322000000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653550874.124762] [gadi-cpu-clx-1007:3495524:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653550874.124178] [gadi-cpu-clx-1007:3495539:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x1499f8400000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653550874.124636] [gadi-cpu-clx-1007:3495539:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653550874.124202] [gadi-cpu-clx-1007:3495563:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14da47000000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653550874.124640] [gadi-cpu-clx-1007:3495563:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+[1653550874.124216] [gadi-cpu-clx-1007:3495566:0]           ib_md.c:349  UCX  ERROR ibv_reg_mr(address=0x14e6aea00000, length=39845888, access=0xf) failed: Cannot allocate memory
+[1653550874.124804] [gadi-cpu-clx-1007:3495566:0]           mpool.c:227  UCX  ERROR Failed to allocate memory pool (name=rc_recv_desc) chunk: Input/output error
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 30 with PID 0 on node gadi-cpu-clx-1007 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 8 with PID 0 on node gadi-cpu-clx-1007 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 20 with PID 0 on node gadi-cpu-clx-1007 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 24 with PID 0 on node gadi-cpu-clx-1007 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 25 with PID 0 on node gadi-cpu-clx-1007 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 5 with PID 0 on node gadi-cpu-clx-1007 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 27 with PID 0 on node gadi-cpu-clx-1007 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+=>> PBS: job killed: walltime 79 exceeded limit 60
+mpirun: abort is already in progress...hit ctrl-c again to forcibly terminate
+
+[gadi-cpu-clx-1007:3501867] *** Process received signal ***
+[gadi-cpu-clx-1007:3501867] Signal: Segmentation fault (11)
+[gadi-cpu-clx-1007:3501867] Signal code: Address not mapped (1)
+[gadi-cpu-clx-1007:3501867] Failing at address: 0x30
+[gadi-cpu-clx-1007:3501867] [ 0] /lib64/libpthread.so.0(+0x12c20)[0x1539b63bbc20]
+[gadi-cpu-clx-1007:3501867] [ 1] /apps/openmpi-mofed5.5-pbs2021.1/4.0.1/lib/openmpi/mca_pmix_pmix3x.so(OPAL_MCA_PMIX3X_PMIx_Finalize+0x4f8)[0x1539b32805e8]
+[gadi-cpu-clx-1007:3501867] [ 2] /apps/openmpi-mofed5.5-pbs2021.1/4.0.1/lib/openmpi/mca_pmix_pmix3x.so(pmix3x_client_finalize+0x39a)[0x1539b3228e9a]
+[gadi-cpu-clx-1007:3501867] [ 3] /apps/openmpi-mofed5.5-pbs2021.1/4.0.1/lib/openmpi/mca_ess_hnp.so(+0x38c4)[0x1539b44ff8c4]
+[gadi-cpu-clx-1007:3501867] [ 4] /apps/openmpi-mofed5.5-pbs2021.1/4.0.1/lib/openmpi/mca_ess_hnp.so(+0x395c)[0x1539b44ff95c]
+[gadi-cpu-clx-1007:3501867] [ 5] /apps/openmpi-mofed5.5-pbs2021.1/4.0.1/lib/libopen-pal.so.40(opal_libevent2022_event_base_loop+0x7f2)[0x1539b743b672]
+[gadi-cpu-clx-1007:3501867] [ 6] mpirun[0x4011ea]
+[gadi-cpu-clx-1007:3501867] [ 7] /lib64/libc.so.6(__libc_start_main+0xf3)[0x1539b6007493]
+[gadi-cpu-clx-1007:3501867] [ 8] mpirun[0x400e4e]
+[gadi-cpu-clx-1007:3501867] *** End of error message ***
+
+======================================================================================
+                  Resource Usage on 2022-05-26 17:42:38:
+   Job Id:             41373382.gadi-pbs
+   Project:            c37
+   Exit Status:        271 (Linux Signal 15 SIGTERM Termination)
+   Service Units:      4.75
+   NCPUs Requested:    96                     NCPUs Used: 96              
+                                           CPU Time Used: 00:43:15                                   
+   Memory Requested:   10.0GB                Memory Used: 6.9GB           
+   Walltime requested: 00:01:00            Walltime Used: 00:01:29        
+   JobFS requested:    200.0MB                JobFS used: 0B              
+======================================================================================
