@@ -7,11 +7,11 @@
 
 int malloc2dint(int ***array, int n, int m)
 {
-    // allocate the n*m contiguous items
+    // allocate n*m contiguous items
     int *p = (int *)malloc(n * m * sizeof(int));
     if (!p)
         return -1;
-    // allocate the row pointers into the memory */
+    // allocate row pointers into the memory */
     (*array) = (int **)malloc(n * sizeof(int *));
     if (!(*array))
     {
@@ -59,6 +59,7 @@ int main(int argc, char **argv)
             // Program exits if the file pointer returns NULL.
             exit(1);
         }
+        // Set up and reads Matrix A
         fscanf(iptr, "%d", &row1);
         fscanf(iptr, "%d", &column1);
         malloc2dint(&A, row1, column1);
@@ -69,6 +70,7 @@ int main(int argc, char **argv)
                 fscanf(iptr, "%d\t", &A[i][j]);
             }
         }
+        // Set up and reads Matrix B
         fscanf(iptr, "%d", &row2);
         fscanf(iptr, "%d", &column2);
         malloc2dint(&B, row2, column2);
@@ -79,6 +81,7 @@ int main(int argc, char **argv)
                 fscanf(iptr, "%d\t", &B[i][j]);
             }
         }
+        // Set up Matrix C
         malloc2dint(&C, column2, row1);
     }
     // broadcast matrix dimension to all processors
@@ -261,19 +264,6 @@ int main(int argc, char **argv)
                 Cptr, sendcounts, displs, subarrtype, 0, MPI_COMM_WORLD);
 
     end = MPI_Wtime();
-
-    /*if (my_rank == 0)
-    {
-        printf("Global c\n");
-        for (int i = 0; i < row3; i++)
-        {
-            for (int j = 0; j < column3; j++)
-            {
-                printf("%2d\t", C[i][j]);
-            }
-            printf("\n");
-        }
-    }*/
 
     // Write output to file
     if (my_rank == 0)

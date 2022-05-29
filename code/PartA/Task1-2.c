@@ -114,33 +114,3 @@ int main(int argc, char **argv)
     fclose(optr);
     return 0;
 }
-
-/*for (int i = 0; i < row1; i++)
-   {
-       for (int j = 0; j < column1; j++)
-       {
-           printf("%d\t", A[i * column1 + j]);
-       }
-       printf("\n");
-   }
-
-   for (int i = 0; i < row2; i++)
-   {
-       for (int j = 0; j < column2; j++)
-       {
-           printf("%d\t", B[i * column2 + j]);
-       }
-       printf("\n");
-   }*/
-
-/*for (int i = 0; i < row3; i++)
-{
-    for (int j = 0; j < column3; j++)
-    {
-        C[i*column3 + j] = 0;
-        for (int k = 0; k < column1; k++)
-        {
-            C[i*column3 + j] += A[i*column1 + k] * B[k*column2 + j];
-        }
-    }
-}*/

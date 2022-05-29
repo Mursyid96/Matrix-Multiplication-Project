@@ -58,7 +58,7 @@ int main(int argc, char **argv)
 // blocked matrix multiplication
 #pragma omp parallel
     {
-        #pragma omp for nowait
+        #pragma omp for schedule (static)
         // traverse by blocks
         for (int ii = 1; ii <= row3 / block; ii++)
         {
@@ -113,14 +113,3 @@ int main(int argc, char **argv)
     fclose(optr);
     return 0;
 }
-
-/* for (int i = 0; i < row3; i++)
- {
-     for (int k = 0; k < column3; k++)
-     {
-         for (int j = 0; j < column1; j++)
-         {
-             C[i * column3 + j] += A[i * column1 + k] * B[k * column2 + j];
-         }
-     }
- }*/

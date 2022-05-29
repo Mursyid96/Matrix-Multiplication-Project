@@ -191,10 +191,12 @@ int main(int argc, char **argv)
         exit(1);
     }
 
+    // Set up threads and number of threads
     nthrd = atoi(argv[1]);
     threads = (pthread_t *)malloc(nthrd * sizeof(*threads));
     squaredP = sqrt(nthrd);
 
+    // Open file
     if ((iptr = fopen(argv[2], "r")) == NULL)
     {
         printf("Error! opening file");
@@ -202,6 +204,7 @@ int main(int argc, char **argv)
         exit(1);
     }
 
+    // Set up and reads Matrix A
     fscanf(iptr, "%d", &row1);
     fscanf(iptr, "%d", &column1);
     malloc2dint(&A, row1, column1);
@@ -212,6 +215,8 @@ int main(int argc, char **argv)
             fscanf(iptr, "%d\t", &A[i][j]);
         }
     }
+
+    // Set up and reads Matrix B
     fscanf(iptr, "%d", &row2);
     fscanf(iptr, "%d", &column2);
     malloc2dint(&B, row2, column2);
@@ -222,8 +227,9 @@ int main(int argc, char **argv)
             fscanf(iptr, "%d\t", &B[i][j]);
         }
     }
-    malloc2dint(&C, column2, row1);
 
+    // Set up and reads Matrix C
+    malloc2dint(&C, column2, row1);
     int row3 = row1;
     int column3 = column2;
     N = row1;
@@ -241,16 +247,18 @@ int main(int argc, char **argv)
     }
     GET_TIME(finish);
     
+    // Calculate running time
     elapsed = finish - start;
 
+    // Opening output file
     optr = fopen(argv[3], "w");
-
     if (optr == NULL)
     {
         printf("Error!");
         exit(1);
     }
 
+    // Writing to output file
     for (int i = 0; i < row3; i++)
     {
         for (int j = 0; j < column3; j++)
@@ -260,6 +268,7 @@ int main(int argc, char **argv)
         fprintf(optr, "\n");
     }
 
+    // Prints running time
     fprintf(optr, "Running time: %es\n", elapsed);
     printf("Running time: %es\n", elapsed);
 

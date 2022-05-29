@@ -60,6 +60,7 @@ int main(int argc, char **argv)
             // Program exits if the file pointer returns NULL.
             exit(1);
         }
+        // Set up and reads Matrix A
         fscanf(iptr, "%d", &row1);
         fscanf(iptr, "%d", &column1);
         malloc2dint(&A, row1, column1);
@@ -70,6 +71,7 @@ int main(int argc, char **argv)
                 fscanf(iptr, "%d\t", &A[i][j]);
             }
         }
+        // Set up and reads Matrix B
         fscanf(iptr, "%d", &row2);
         fscanf(iptr, "%d", &column2);
         malloc2dint(&B, row2, column2);
@@ -80,7 +82,7 @@ int main(int argc, char **argv)
                 fscanf(iptr, "%d\t", &B[i][j]);
             }
         }
-        fclose(iptr);
+        // Set up Matrix C
         malloc2dint(&C, column2, row1);
     }
     // broadcast matrix dimension to all processors
