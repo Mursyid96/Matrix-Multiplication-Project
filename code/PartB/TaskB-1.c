@@ -262,7 +262,7 @@ int main(int argc, char **argv)
         // blocked matrix multiplication
         #pragma omp parallel
         {
-            #pragma omp for nowait
+            #pragma omp for 
             // traverse by blocks
             for (int ii = 1; ii <= row3_local / block; ii++)
             {

@@ -173,6 +173,7 @@ void *mat_mul(void *rank)
             {
                 for (int j = 0; j < dimension; j++)
                 {
+                    // Write to main C
                     C[f][g] += localA[i][k] * localB[k][j];
                     g++;
                 }
